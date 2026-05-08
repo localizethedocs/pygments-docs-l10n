@@ -1,0 +1,927 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/tokens.rst:5
+msgid "Builtin Tokens"
+msgstr ""
+
+#: ../../../docs/tokens.rst:9
+msgid ""
+"In the :mod:`pygments.token` module, there is a special object called "
+"`Token` that is used to create token types."
+msgstr ""
+
+#: ../../../docs/tokens.rst:12
+msgid ""
+"You can create a new token type by accessing an attribute of `Token` whose "
+"name starts with an uppercase letter:"
+msgstr ""
+
+#: ../../../docs/tokens.rst:15
+msgid ""
+">>> from pygments.token import Token\n"
+">>> Token.String\n"
+"Token.String\n"
+">>> Token.String is Token.String\n"
+"True"
+msgstr ""
+
+#: ../../../docs/tokens.rst:23
+msgid ""
+"Note that tokens are singletons so you can use the ``is`` operator for "
+"comparing token types."
+msgstr ""
+
+#: ../../../docs/tokens.rst:26
+msgid "You can also use the ``in`` operator to perform set tests:"
+msgstr ""
+
+#: ../../../docs/tokens.rst:28
+msgid ""
+">>> from pygments.token import Comment\n"
+">>> Comment.Single in Comment\n"
+"True\n"
+">>> Comment in Comment.Multi\n"
+"False"
+msgstr ""
+
+#: ../../../docs/tokens.rst:36
+msgid ""
+"This can be useful in :doc:`filters <filters>` and if you write lexers on "
+"your own without using the base lexers."
+msgstr ""
+
+#: ../../../docs/tokens.rst:39
+msgid ""
+"You can also split a token type into a hierarchy, and get the parent of it:"
+msgstr ""
+
+#: ../../../docs/tokens.rst:41
+msgid ""
+">>> String.split()\n"
+"[Token, Token.Literal, Token.Literal.String]\n"
+">>> String.parent\n"
+"Token.Literal"
+msgstr ""
+
+#: ../../../docs/tokens.rst:48
+msgid ""
+"In principle, you can create an unlimited number of token types but nobody "
+"can guarantee that a style would define style rules for a token type. "
+"Because of that, Pygments proposes some global token types defined in the "
+"`pygments.token.STANDARD_TYPES` dict."
+msgstr ""
+
+#: ../../../docs/tokens.rst:53
+msgid "For some tokens aliases are already defined:"
+msgstr ""
+
+#: ../../../docs/tokens.rst:55
+msgid ""
+">>> from pygments.token import String\n"
+">>> String\n"
+"Token.Literal.String"
+msgstr ""
+
+#: ../../../docs/tokens.rst:61
+msgid ""
+"Inside the :mod:`pygments.token` module the following aliases are defined:"
+msgstr ""
+
+#: ../../../docs/tokens.rst:64
+msgid "`Text`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:64
+msgid "`Token.Text`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:64
+msgid "for any type of text data"
+msgstr ""
+
+#: ../../../docs/tokens.rst:65
+msgid "`Whitespace`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:65
+msgid "`Token.Text.Whitespace`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:65
+msgid "for whitespace"
+msgstr ""
+
+#: ../../../docs/tokens.rst:66
+msgid "`Error`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:66
+msgid "`Token.Error`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:66
+msgid "represents lexer errors"
+msgstr ""
+
+#: ../../../docs/tokens.rst:67
+msgid "`Other`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:67
+msgid "`Token.Other`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:67
+msgid ""
+"special token for data not matched by a parser (e.g. HTML markup in PHP code)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:70 ../../../docs/tokens.rst:103
+msgid "`Keyword`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:70
+msgid "`Token.Keyword`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:70
+msgid "any kind of keywords"
+msgstr ""
+
+#: ../../../docs/tokens.rst:71 ../../../docs/tokens.rst:133
+msgid "`Name`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:71
+msgid "`Token.Name`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:71
+msgid "variable/function names"
+msgstr ""
+
+#: ../../../docs/tokens.rst:72 ../../../docs/tokens.rst:211
+msgid "`Literal`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:72
+msgid "`Token.Literal`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:72
+msgid "Any literals"
+msgstr ""
+
+#: ../../../docs/tokens.rst:73 ../../../docs/tokens.rst:218
+msgid "`String`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:73
+msgid "`Token.Literal.String`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:73
+msgid "string literals"
+msgstr ""
+
+#: ../../../docs/tokens.rst:74 ../../../docs/tokens.rst:264
+msgid "`Number`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:74
+msgid "`Token.Literal.Number`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:74
+msgid "number literals"
+msgstr ""
+
+#: ../../../docs/tokens.rst:75 ../../../docs/tokens.rst:289
+msgid "`Operator`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:75
+msgid "`Token.Operator`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:75
+msgid "operators (``+``, ``not``...)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:76 ../../../docs/tokens.rst:301
+msgid "`Punctuation`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:76
+msgid "`Token.Punctuation`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:76
+msgid "punctuation (``[``, ``(``...)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:77 ../../../docs/tokens.rst:314
+msgid "`Comment`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:77
+msgid "`Token.Comment`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:77
+msgid "any kind of comments"
+msgstr ""
+
+#: ../../../docs/tokens.rst:78 ../../../docs/tokens.rst:345
+msgid "`Generic`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:78
+msgid "`Token.Generic`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:78
+msgid "generic tokens (have a look at the explanation below)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:82
+msgid ""
+"Normally you just create token types using the already defined aliases. For "
+"each of those token aliases, a number of subtypes exists (excluding the "
+"special tokens `Token.Text`, `Token.Error` and `Token.Other`)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:86
+msgid ""
+"It's also possible to convert strings to token types (for example if you "
+"want to supply a token from the command line):"
+msgstr ""
+
+#: ../../../docs/tokens.rst:89
+msgid ""
+">>> from pygments.token import String, string_to_tokentype\n"
+">>> string_to_tokentype(\"String\")\n"
+"Token.Literal.String\n"
+">>> string_to_tokentype(\"Token.Literal.String\")\n"
+"Token.Literal.String\n"
+">>> string_to_tokentype(String)\n"
+"Token.Literal.String"
+msgstr ""
+
+#: ../../../docs/tokens.rst:101
+msgid "Keyword Tokens"
+msgstr ""
+
+#: ../../../docs/tokens.rst:104
+msgid ""
+"For any kind of keyword (especially if it doesn't match any of the subtypes "
+"of course)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:107
+msgid "`Keyword.Constant`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:108
+msgid ""
+"For keywords that are constants (e.g. ``None`` in future Python versions)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:110
+msgid "`Keyword.Declaration`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:111
+msgid ""
+"For keywords used for variable declaration (e.g. ``var`` in some programming "
+"languages like JavaScript)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:114
+msgid "`Keyword.Namespace`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:115
+msgid ""
+"For keywords used for namespace declarations (e.g. ``import`` in Python and "
+"Java and ``package`` in Java)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:118
+msgid "`Keyword.Pseudo`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:119
+msgid ""
+"For keywords that aren't really keywords (e.g. ``None`` in old Python "
+"versions)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:122
+msgid "`Keyword.Reserved`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:123
+msgid "For reserved keywords."
+msgstr ""
+
+#: ../../../docs/tokens.rst:125
+msgid "`Keyword.Type`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:126
+msgid ""
+"For builtin types that can't be used as identifiers (e.g. ``int``, ``char`` "
+"etc. in C)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:131
+msgid "Name Tokens"
+msgstr ""
+
+#: ../../../docs/tokens.rst:134
+msgid "For any name (variable names, function names, classes)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:136
+msgid "`Name.Attribute`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:137
+msgid "For all attributes (e.g. in HTML tags)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:139
+msgid "`Name.Builtin`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:140
+msgid "Builtin names; names that are available in the global namespace."
+msgstr ""
+
+#: ../../../docs/tokens.rst:142
+msgid "`Name.Builtin.Pseudo`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:143
+msgid ""
+"Builtin names that are implicit (e.g. ``self`` in Ruby, ``this`` in Java)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:145
+msgid "`Name.Class`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:146
+msgid ""
+"Class names. Because no lexer can know if a name is a class or a function or "
+"something else this token is meant for class declarations."
+msgstr ""
+
+#: ../../../docs/tokens.rst:149
+msgid "`Name.Constant`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:150
+msgid ""
+"Token type for constants. In some languages you can recognise a token by the "
+"way it's defined (the value after a ``const`` keyword for example). In other "
+"languages constants are uppercase by definition (Ruby)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:154
+msgid "`Name.Decorator`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:155
+msgid ""
+"Token type for decorators. Decorators are syntactic elements in the Python "
+"language. Similar syntax elements exist in C# and Java."
+msgstr ""
+
+#: ../../../docs/tokens.rst:158
+msgid "`Name.Entity`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:159
+msgid "Token type for special entities. (e.g. ``&nbsp;`` in HTML)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:161
+msgid "`Name.Exception`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:162
+msgid ""
+"Token type for exception names (e.g. ``RuntimeError`` in Python). Some "
+"languages define exceptions in the function signature (Java). You can "
+"highlight the name of that exception using this token then."
+msgstr ""
+
+#: ../../../docs/tokens.rst:166
+msgid "`Name.Function`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:167
+msgid "Token type for function names."
+msgstr ""
+
+#: ../../../docs/tokens.rst:169
+msgid "`Name.Function.Magic`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:170
+msgid ""
+"same as `Name.Function` but for special function names that have an implicit "
+"use in a language (e.g. ``__init__`` method in Python)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:173
+msgid "`Name.Label`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:174
+msgid "Token type for label names (e.g. in languages that support ``goto``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:176
+msgid "`Name.Namespace`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:177
+msgid ""
+"Token type for namespaces. (e.g. import paths in Java/Python), names "
+"following the ``module``/``namespace`` keyword in other languages."
+msgstr ""
+
+#: ../../../docs/tokens.rst:180
+msgid "`Name.Other`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:181
+msgid "Other names. Normally unused."
+msgstr ""
+
+#: ../../../docs/tokens.rst:183
+msgid "`Name.Property`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:184
+msgid "Additional token type occasionally used for class attributes."
+msgstr ""
+
+#: ../../../docs/tokens.rst:186
+msgid "`Name.Tag`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:187
+msgid "Tag names (in HTML/XML markup or configuration files)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:189
+msgid "`Name.Variable`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:190
+msgid ""
+"Token type for variables. Some languages have prefixes for variable names "
+"(PHP, Ruby, Perl). You can highlight them using this token."
+msgstr ""
+
+#: ../../../docs/tokens.rst:193
+msgid "`Name.Variable.Class`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:194
+msgid ""
+"same as `Name.Variable` but for class variables (also static variables)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:196
+msgid "`Name.Variable.Global`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:197
+msgid ""
+"same as `Name.Variable` but for global variables (used in Ruby, for example)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:200
+msgid "`Name.Variable.Instance`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:201
+msgid "same as `Name.Variable` but for instance variables."
+msgstr ""
+
+#: ../../../docs/tokens.rst:203
+msgid "`Name.Variable.Magic`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:204
+msgid ""
+"same as `Name.Variable` but for special variable names that have an implicit "
+"use in a language (e.g. ``__doc__`` in Python)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:209
+msgid "Literals"
+msgstr ""
+
+#: ../../../docs/tokens.rst:212
+msgid "For any literal (if not further defined)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:214
+msgid "`Literal.Date`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:215
+msgid "for date literals (e.g. ``42d`` in Boo)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:219
+msgid "For any string literal."
+msgstr ""
+
+#: ../../../docs/tokens.rst:221
+msgid "`String.Affix`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:222
+msgid ""
+"Token type for affixes that further specify the type of the string they're "
+"attached to (e.g. the prefixes ``r`` and ``u8`` in ``r\"foo\"`` and "
+"``u8\"foo\"``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:225
+msgid "`String.Backtick`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:226
+msgid "Token type for strings enclosed in backticks."
+msgstr ""
+
+#: ../../../docs/tokens.rst:228
+msgid "`String.Char`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:229
+msgid "Token type for single characters (e.g. Java, C)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:231
+msgid "`String.Delimiter`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:232
+msgid ""
+"Token type for delimiting identifiers in \"heredoc\", raw and other similar "
+"strings (e.g. the word ``END`` in Perl code ``print <<'END';``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:235
+msgid "`String.Doc`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:236
+msgid "Token type for documentation strings (for example Python)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:238
+msgid "`String.Double`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:239
+msgid "Double quoted strings."
+msgstr ""
+
+#: ../../../docs/tokens.rst:241
+msgid "`String.Escape`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:242
+msgid "Token type for escape sequences in strings."
+msgstr ""
+
+#: ../../../docs/tokens.rst:244
+msgid "`String.Heredoc`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:245
+msgid "Token type for \"heredoc\" strings (e.g. in Ruby or Perl)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:247
+msgid "`String.Interpol`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:248
+msgid "Token type for interpolated parts in strings (e.g. ``#{foo}`` in Ruby)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:250
+msgid "`String.Other`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:251
+msgid ""
+"Token type for any other strings (for example ``%q{foo}`` string constructs "
+"in Ruby)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:254
+msgid "`String.Regex`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:255
+msgid ""
+"Token type for regular expression literals (e.g. ``/foo/`` in JavaScript)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:257
+msgid "`String.Single`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:258
+msgid "Token type for single quoted strings."
+msgstr ""
+
+#: ../../../docs/tokens.rst:260
+msgid "`String.Symbol`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:261
+msgid "Token type for symbols (e.g. ``:foo`` in LISP or Ruby)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:265
+msgid "Token type for any number literal."
+msgstr ""
+
+#: ../../../docs/tokens.rst:267
+msgid "`Number.Bin`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:268
+msgid "Token type for binary literals (e.g. ``0b101010``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:270
+msgid "`Number.Float`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:271
+msgid "Token type for float literals (e.g. ``42.0``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:273
+msgid "`Number.Hex`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:274
+msgid "Token type for hexadecimal number literals (e.g. ``0xdeadbeef``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:276
+msgid "`Number.Integer`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:277
+msgid "Token type for integer literals (e.g. ``42``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:279
+msgid "`Number.Integer.Long`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:280
+msgid "Token type for long integer literals (e.g. ``42L`` in Python)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:282
+msgid "`Number.Oct`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:283
+msgid "Token type for octal literals."
+msgstr ""
+
+#: ../../../docs/tokens.rst:287
+msgid "Operators"
+msgstr ""
+
+#: ../../../docs/tokens.rst:290
+msgid "For any punctuation operator (e.g. ``+``, ``-``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:292
+msgid "`Operator.Word`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:293
+msgid "For any operator that is a word (e.g. ``not``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:297
+msgid "Punctuation"
+msgstr ""
+
+#: ../../../docs/tokens.rst:302
+msgid "For any punctuation which is not an operator (e.g. ``[``, ``(``...)"
+msgstr ""
+
+#: ../../../docs/tokens.rst:304
+msgid "`Punctuation.Marker`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:305
+msgid ""
+"For markers that point to a location (e.g., carets in Python tracebacks for "
+"syntax errors)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:312
+msgid "Comments"
+msgstr ""
+
+#: ../../../docs/tokens.rst:315
+msgid "Token type for any comment."
+msgstr ""
+
+#: ../../../docs/tokens.rst:317
+msgid "`Comment.Hashbang`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:318
+msgid ""
+"Token type for hashbang comments (i.e. first lines of files that start with"
+msgstr ""
+
+#: ../../../docs/tokens.rst:319
+msgid "``#!``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:321
+msgid "`Comment.Multiline`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:322
+msgid "Token type for multiline comments."
+msgstr ""
+
+#: ../../../docs/tokens.rst:324
+msgid "`Comment.Preproc`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:325
+msgid ""
+"Token type for preprocessor comments (also ``<?php``/``<%`` constructs)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:327
+msgid "`Comment.PreprocFile`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:328
+msgid ""
+"Token type for filenames in preprocessor comments, such as include files in "
+"C/C++."
+msgstr ""
+
+#: ../../../docs/tokens.rst:330
+msgid "`Comment.Single`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:331
+msgid "Token type for comments that end at the end of a line (e.g. ``# foo``)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:333
+msgid "`Comment.Special`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:334
+msgid ""
+"Special data in comments. For example code tags, author and license "
+"information, etc."
+msgstr ""
+
+#: ../../../docs/tokens.rst:339
+msgid "Generic Tokens"
+msgstr ""
+
+#: ../../../docs/tokens.rst:341
+msgid ""
+"Generic tokens are for special lexers like the `DiffLexer` that doesn't "
+"really highlight a programming language but a patch file."
+msgstr ""
+
+#: ../../../docs/tokens.rst:346
+msgid "A generic, unstyled token. Normally you don't use this token type."
+msgstr ""
+
+#: ../../../docs/tokens.rst:348
+msgid "`Generic.Deleted`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:349
+msgid "Marks the token value as deleted."
+msgstr ""
+
+#: ../../../docs/tokens.rst:351
+msgid "`Generic.Emph`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:352
+msgid "Marks the token value as emphasized."
+msgstr ""
+
+#: ../../../docs/tokens.rst:354
+msgid "`Generic.Error`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:355
+msgid "Marks the token value as an error message."
+msgstr ""
+
+#: ../../../docs/tokens.rst:357
+msgid "`Generic.Heading`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:358
+msgid "Marks the token value as headline."
+msgstr ""
+
+#: ../../../docs/tokens.rst:360
+msgid "`Generic.Inserted`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:361
+msgid "Marks the token value as inserted."
+msgstr ""
+
+#: ../../../docs/tokens.rst:363
+msgid "`Generic.Output`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:364
+msgid "Marks the token value as program output (e.g. for python cli lexer)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:366
+msgid "`Generic.Prompt`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:367
+msgid "Marks the token value as command prompt (e.g. bash lexer)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:369
+msgid "`Generic.Strong`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:370
+msgid "Marks the token value as bold (e.g. for rst lexer)."
+msgstr ""
+
+#: ../../../docs/tokens.rst:372
+msgid "`Generic.EmphStrong`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:373
+msgid "Marks the token value as bold and emphasized."
+msgstr ""
+
+#: ../../../docs/tokens.rst:375
+msgid "`Generic.Subheading`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:376
+msgid "Marks the token value as subheadline."
+msgstr ""
+
+#: ../../../docs/tokens.rst:378
+msgid "`Generic.Traceback`"
+msgstr ""
+
+#: ../../../docs/tokens.rst:379
+msgid "Marks the token value as a part of an error traceback."
+msgstr ""

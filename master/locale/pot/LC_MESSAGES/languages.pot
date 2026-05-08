@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../languages.rst:4
+msgid "Languages"
+msgstr ""
+
+#: ../../../languages.rst:9
+msgid "... that's all?"
+msgstr ""
+
+#: ../../../languages.rst:11
+msgid ""
+"Well, why not write your own? Contributing to Pygments is easy and fun. Take "
+"a look at the :doc:`docs on lexer development <docs/lexerdevelopment>`. Pull "
+"requests are welcome on `GitHub <https://github.com/pygments/pygments>`_."
+msgstr ""
+
+#: ../../../languages.rst:17
+msgid ""
+"The languages listed here are supported in the development version. The "
+"latest release may lack a few of them."
+msgstr ""
