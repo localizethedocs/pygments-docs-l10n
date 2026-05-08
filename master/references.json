@@ -1,0 +1,47 @@
+{
+  "po" : 
+  {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_CN" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_TW" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    }
+  },
+  "pot" : 
+  {
+    "branch" : "master",
+    "commit" : 
+    {
+      "date" : "2026-05-03 16:48:17 +0200",
+      "hash" : "98aa256034403c29cf49d8ec5d190002e0fc1c85",
+      "title" : "Merge pull request #3066 from anayrat/explain"
+    }
+  },
+  "type" : "branch",
+  "version" : "master"
+}
