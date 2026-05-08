@@ -32,7 +32,7 @@ msgstr ""
 msgid ""
 "a wide range of |language_count| languages and other text formats is "
 "supported"
-msgstr ""
+msgstr "支援多達 |language_count| 種語言及其他文字格式"
 
 #: ../../../index.rst:9
 msgid "special attention is paid to details that increase highlighting quality"
@@ -48,11 +48,11 @@ msgstr ""
 msgid ""
 "a number of output formats is available, among them HTML, RTF, LaTeX and "
 "ANSI sequences"
-msgstr ""
+msgstr "提供多種輸出格式，包括 HTML、RTF、LaTeX 以及 ANSI 序列"
 
 #: ../../../index.rst:14
 msgid "it is usable as a command-line tool and as a library"
-msgstr ""
+msgstr "它既可作為命令行工具使用，也能作為程式庫呼叫"
 
 #: ../../../index.rst:16
 msgid ""
@@ -83,13 +83,15 @@ msgstr ""
 
 #: ../../../index.rst:33
 msgid "The authors"
-msgstr ""
+msgstr "作者"
 
 #: ../../../index.rst:35
 msgid ""
 "Pygments is maintained by **Georg Brandl**, e-mail address *georg*\\ *@*\\ "
 "*python.org*, **Matthäus Chajdas** and **Jean Abou-Samra**."
 msgstr ""
+"Pygments 目前由 **Georg Brandl**\\ （電子郵件： *georg*\\ *@*\\ *python."
+"org*）、**Matthäus Chajdas** 與 **Jean Abou-Samra** 負責維護。"
 
 #: ../../../index.rst:37
 msgid ""

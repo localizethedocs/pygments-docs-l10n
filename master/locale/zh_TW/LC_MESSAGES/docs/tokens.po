@@ -106,11 +106,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:64
 msgid "`Text`"
-msgstr ""
+msgstr "`Text`"
 
 #: ../../../docs/tokens.rst:64
 msgid "`Token.Text`"
-msgstr ""
+msgstr "`Token.Text`"
 
 #: ../../../docs/tokens.rst:64
 msgid "for any type of text data"
@@ -142,11 +142,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:67
 msgid "`Other`"
-msgstr ""
+msgstr "`Other`"
 
 #: ../../../docs/tokens.rst:67
 msgid "`Token.Other`"
-msgstr ""
+msgstr "`Token.Other`"
 
 #: ../../../docs/tokens.rst:67
 msgid ""
@@ -191,11 +191,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:73 ../../../docs/tokens.rst:218
 msgid "`String`"
-msgstr ""
+msgstr "`String`"
 
 #: ../../../docs/tokens.rst:73
 msgid "`Token.Literal.String`"
-msgstr ""
+msgstr "`Token.Literal.String`"
 
 #: ../../../docs/tokens.rst:73
 msgid "string literals"
@@ -203,11 +203,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:74 ../../../docs/tokens.rst:264
 msgid "`Number`"
-msgstr ""
+msgstr "`Number`"
 
 #: ../../../docs/tokens.rst:74
 msgid "`Token.Literal.Number`"
-msgstr ""
+msgstr "`Token.Literal.Number`"
 
 #: ../../../docs/tokens.rst:74
 msgid "number literals"
@@ -215,11 +215,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:75 ../../../docs/tokens.rst:289
 msgid "`Operator`"
-msgstr ""
+msgstr "`Operator`"
 
 #: ../../../docs/tokens.rst:75
 msgid "`Token.Operator`"
-msgstr ""
+msgstr "`Token.Operator`"
 
 #: ../../../docs/tokens.rst:75
 msgid "operators (``+``, ``not``...)"
@@ -227,11 +227,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:76 ../../../docs/tokens.rst:301
 msgid "`Punctuation`"
-msgstr ""
+msgstr "`Punctuation`"
 
 #: ../../../docs/tokens.rst:76
 msgid "`Token.Punctuation`"
-msgstr ""
+msgstr "`Token.Punctuation`"
 
 #: ../../../docs/tokens.rst:76
 msgid "punctuation (``[``, ``(``...)"
@@ -239,11 +239,11 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:77 ../../../docs/tokens.rst:314
 msgid "`Comment`"
-msgstr ""
+msgstr "`Comment`"
 
 #: ../../../docs/tokens.rst:77
 msgid "`Token.Comment`"
-msgstr ""
+msgstr "`Token.Comment`"
 
 #: ../../../docs/tokens.rst:77
 msgid "any kind of comments"
@@ -336,7 +336,7 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:122
 msgid "`Keyword.Reserved`"
-msgstr ""
+msgstr "`Keyword.Reserved`"
 
 #: ../../../docs/tokens.rst:123
 msgid "For reserved keywords."
@@ -344,7 +344,7 @@ msgstr ""
 
 #: ../../../docs/tokens.rst:125
 msgid "`Keyword.Type`"
-msgstr ""
+msgstr "`Keyword.Type`"
 
 #: ../../../docs/tokens.rst:126
 msgid ""
