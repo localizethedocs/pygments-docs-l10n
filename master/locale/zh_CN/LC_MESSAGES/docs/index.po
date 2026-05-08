@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/index.rst:2
+msgid "Pygments documentation"
+msgstr ""
+
+#: ../../../docs/index.rst:4
+msgid "**Starting with Pygments**"
+msgstr ""
+
+#: ../../../docs/index.rst:13
+msgid "**Builtin components**"
+msgstr ""
+
+#: ../../../docs/index.rst:23
+msgid "**Reference**"
+msgstr ""
+
+#: ../../../docs/index.rst:33
+msgid "**Hacking with Pygments**"
+msgstr ""
+
+#: ../../../docs/index.rst:44
+msgid "**Hints and tricks**"
+msgstr ""
+
+#: ../../../docs/index.rst:54
+msgid "**About Pygments**"
+msgstr ""
+
+#: ../../../docs/index.rst:64
+msgid ""
+"If you find bugs or have suggestions for the documentation, please submit "
+"them on `GitHub <https://github.com/pygments/pygments>`_."
+msgstr ""
