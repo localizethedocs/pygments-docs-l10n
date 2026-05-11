@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:2
 msgid "Welcome!"
-msgstr ""
+msgstr "歡迎！"
 
 #: ../../../index.rst:4
 msgid ""
@@ -27,6 +27,8 @@ msgid ""
 "for use in code hosting, forums, wikis or other applications that need to "
 "prettify source code.  Highlights are:"
 msgstr ""
+"這是 Pygments 的主頁。它是一款通用的語法標明器，適用於程式碼託管平臺、論壇、"
+"維基或其他需要美化來源碼的應用程式。其特點包括："
 
 #: ../../../index.rst:8
 msgid ""
