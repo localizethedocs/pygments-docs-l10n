@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Styles &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=88a78f1b"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/styles.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Unicode and Encodings" href="unicode.html" />
+    <link rel="prev" title="Available formatters" href="formatters.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Styles</a><ul>
+<li><a class="reference internal" href="#creating-own-styles">Creating Own Styles</a></li>
+<li><a class="reference internal" href="#builtin-styles">Builtin Styles</a></li>
+<li><a class="reference internal" href="#getting-a-list-of-available-styles">Getting a list of available styles</a></li>
+<li><a class="reference internal" href="#terminal-styles">Terminal Styles</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上個主題</h4>
+  <p class="topless"><a href="formatters.html"
+                        title="上一章">Available formatters</a></p>
+</div>
+<div>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="unicode.html"
+                        title="下一章">Unicode and Encodings</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/styles.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="前往" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="styles">
+<h1>Styles<a class="headerlink" href="#styles" title="連結到這個標頭">¶</a></h1>
+<p>Pygments comes with <a class="reference internal" href="../styles.html"><span class="doc">some builtin styles</span></a> that work for both the
+HTML and LaTeX formatter.</p>
+<p>The builtin styles can be looked up with the <cite>get_style_by_name</cite> function:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.styles</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_style_by_name</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">get_style_by_name</span><span class="p">(</span><span class="s1">&#x27;colorful&#x27;</span><span class="p">)</span>
+<span class="go">&lt;class &#x27;pygments.styles.colorful.ColorfulStyle&#x27;&gt;</span>
+</pre></div>
+</div>
+<p>You can pass a instance of a <cite>Style</cite> class to a formatter as the <cite>style</cite>
+option in form of a string:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.styles</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_style_by_name</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.formatters</span><span class="w"> </span><span class="kn">import</span> <span class="n">HtmlFormatter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">HtmlFormatter</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#x27;colorful&#x27;</span><span class="p">)</span><span class="o">.</span><span class="n">style</span>
+<span class="go">&lt;class &#x27;pygments.styles.colorful.ColorfulStyle&#x27;&gt;</span>
+</pre></div>
+</div>
+<p>Or you can also import your own style (which must be a subclass of
+<cite>pygments.style.Style</cite>) and pass it to the formatter:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">yourapp.yourmodule</span><span class="w"> </span><span class="kn">import</span> <span class="n">YourStyle</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.formatters</span><span class="w"> </span><span class="kn">import</span> <span class="n">HtmlFormatter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">HtmlFormatter</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="n">YourStyle</span><span class="p">)</span><span class="o">.</span><span class="n">style</span>
+<span class="go">&lt;class &#x27;yourapp.yourmodule.YourStyle&#x27;&gt;</span>
+</pre></div>
+</div>
+<section id="creating-own-styles">
+<h2>Creating Own Styles<a class="headerlink" href="#creating-own-styles" title="連結到這個標頭">¶</a></h2>
+<p>See <a class="reference internal" href="styledevelopment.html"><span class="doc">Write your own style</span></a>.</p>
+</section>
+<section id="builtin-styles">
+<h2>Builtin Styles<a class="headerlink" href="#builtin-styles" title="連結到這個標頭">¶</a></h2>
+<p>Pygments ships some builtin styles which are maintained by the Pygments team.</p>
+<p>To get a list of known styles you can use this snippet:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.styles</span><span class="w"> </span><span class="kn">import</span> <span class="n">STYLE_MAP</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">STYLE_MAP</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="go">[&#x27;default&#x27;, &#x27;emacs&#x27;, &#x27;friendly&#x27;, &#x27;colorful&#x27;]</span>
+</pre></div>
+</div>
+</section>
+<section id="getting-a-list-of-available-styles">
+<h2>Getting a list of available styles<a class="headerlink" href="#getting-a-list-of-available-styles" title="連結到這個標頭">¶</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">在 0.6 版被加入.</span></p>
+</div>
+<p>Because it could be that a plugin registered a style, there is
+a way to iterate over all styles:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.styles</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_all_styles</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">styles</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">get_all_styles</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<section id="terminal-styles">
+<span id="ansiterminalstyle"></span><h2>Terminal Styles<a class="headerlink" href="#terminal-styles" title="連結到這個標頭">¶</a></h2>
+<div class="versionadded">
+<p><span class="versionmodified added">在 2.2 版被加入.</span></p>
+</div>
+<p>Custom styles used with the 256-color terminal formatter can also map colors to
+use the 8 default ANSI colors.  To do so, use <code class="docutils literal notranslate"><span class="pre">ansigreen</span></code>, <code class="docutils literal notranslate"><span class="pre">ansibrightred</span></code> or
+any other colors defined in <code class="xref py py-data docutils literal notranslate"><span class="pre">pygments.style.ansicolors</span></code>.  Foreground ANSI
+colors will be mapped to the corresponding <a class="reference external" href="https://en.wikipedia.org/wiki/ANSI_escape_code#Colors">escape codes 30 to 37</a> thus respecting any
+custom color mapping and themes provided by many terminal emulators.  Light
+variants are treated as foreground color with and an added bold flag.
+<code class="docutils literal notranslate"><span class="pre">bg:ansi&lt;color&gt;</span></code> will also be respected, except the light variant will be the
+same shade as their dark variant.</p>
+<p>See the following example where the color of the string <code class="docutils literal notranslate"><span class="pre">&quot;hello</span> <span class="pre">world&quot;</span></code> is
+governed by the escape sequence <code class="docutils literal notranslate"><span class="pre">\x1b[34;01m</span></code> (Ansi bright blue, Bold, 41 being red
+background) instead of an extended foreground &amp; background color.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments</span><span class="w"> </span><span class="kn">import</span> <span class="n">highlight</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Style</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.token</span><span class="w"> </span><span class="kn">import</span> <span class="n">Token</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.lexers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Python3Lexer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.formatters</span><span class="w"> </span><span class="kn">import</span> <span class="n">Terminal256Formatter</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span><span class="w"> </span><span class="nc">MyStyle</span><span class="p">(</span><span class="n">Style</span><span class="p">):</span>
+<span class="go">        styles = {</span>
+<span class="go">            Token.String:     &#x27;ansibrightblue bg:ansibrightred&#x27;,</span>
+<span class="go">        }</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">code</span> <span class="o">=</span> <span class="s1">&#x27;print(&quot;Hello World&quot;)&#x27;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">highlight</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">Python3Lexer</span><span class="p">(),</span> <span class="n">Terminal256Formatter</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="n">MyStyle</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+<span class="go">b&#x27;\x1b[34;41;01m&quot;\x1b[39;49;00m\x1b[34;41;01mHello World\x1b[39;49;00m\x1b[34;41;01m&quot;\x1b[39;49;00m&#x27;</span>
+</pre></div>
+</div>
+<p>Colors specified using <code class="docutils literal notranslate"><span class="pre">ansi*</span></code> are converted to a default set of RGB colors
+when used with formatters other than the terminal-256 formatter.</p>
+<p>By definition of ANSI, the following colors are considered &quot;light&quot; colors, and
+will be rendered by most terminals as bold:</p>
+<ul class="simple">
+<li><p>&quot;brightblack&quot; (darkgrey), &quot;brightred&quot;, &quot;brightgreen&quot;, &quot;brightyellow&quot;, &quot;brightblue&quot;,
+&quot;brightmagenta&quot;, &quot;brightcyan&quot;, &quot;white&quot;</p></li>
+</ul>
+<p>The following are considered &quot;dark&quot; colors and will be rendered as non-bold:</p>
+<ul class="simple">
+<li><p>&quot;black&quot;, &quot;red&quot;, &quot;green&quot;, &quot;yellow&quot;, &quot;blue&quot;, &quot;magenta&quot;, &quot;cyan&quot;,
+&quot;gray&quot;</p></li>
+</ul>
+<p>Exact behavior might depends on the terminal emulator you are using, and its
+settings.</p>
+<div class="versionchanged" id="new-ansi-color-names">
+<p><span class="versionmodified changed">在 2.4 版的變更.</span></p>
+</div>
+<p>The definition of the ANSI color names has changed.
+New names are easier to understand and align to the colors used in other projects.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>New names</p></th>
+<th class="head"><p>Pygments up to 2.3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansiblack</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiblack</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansired</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansidarkred</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansigreen</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansidarkgreen</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansiyellow</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansibrown</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansiblue</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansidarkblue</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansimagenta</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansipurple</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansicyan</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiteal</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansigray</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansilightgray</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightblack</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansidarkgray</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightred</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansired</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightgreen</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansigreen</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightyellow</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiyellow</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightblue</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiblue</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightmagenta</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansifuchsia</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ansibrightcyan</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiturquoise</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ansiwhite</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">#ansiwhite</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>Old ANSI color names are deprecated but will still work.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>
