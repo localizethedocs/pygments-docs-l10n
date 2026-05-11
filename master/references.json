@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-05-03 16:48:17 +0200",
-      "hash" : "98aa256034403c29cf49d8ec5d190002e0fc1c85",
-      "title" : "Merge pull request #3066 from anayrat/explain"
+      "date" : "2026-05-09 10:40:52 +0200",
+      "hash" : "6fe2c3140bf6bdd52a3474ac955df0e0799433a4",
+      "title" : "Python lexer: add frozendict Python 3.15 builtin (#3119)"
     }
   },
   "type" : "branch",
