@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en-US" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Unicode and Encodings &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=49efedef"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/unicode.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Builtin Tokens" href="tokens.html" />
+    <link rel="prev" title="Styles" href="styles.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="styles.html"
+                        title="previous chapter">Styles</a></p>
+</div>
+<div>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="tokens.html"
+                        title="next chapter">Builtin Tokens</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/unicode.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="unicode-and-encodings">
+<h1>Unicode and Encodings<a class="headerlink" href="#unicode-and-encodings" title="Link to this heading">¶</a></h1>
+<p>Since Pygments 0.6, all lexers use unicode strings internally. Because of that
+you might encounter the occasional <code class="xref py py-exc docutils literal notranslate"><span class="pre">UnicodeDecodeError</span></code> if you pass strings
+with the wrong encoding.</p>
+<p>Per default all lexers have their input encoding set to <cite>guess</cite>.  This means
+that the following encodings are tried:</p>
+<ul class="simple">
+<li><p>UTF-8 (including BOM handling)</p></li>
+<li><p>The locale encoding (i.e. the result of <cite>locale.getpreferredencoding()</cite>)</p></li>
+<li><p>As a last resort, <cite>latin1</cite></p></li>
+</ul>
+<p>If you pass a lexer a byte string object (not unicode), it tries to decode the
+data using this encoding.</p>
+<p>You can override the encoding using the <cite>encoding</cite> or <cite>inencoding</cite> lexer
+options.  If you have the <a class="reference external" href="https://chardet.github.io/">chardet</a> library installed and set the encoding to
+<code class="docutils literal notranslate"><span class="pre">chardet</span></code> if will analyse the text and use the encoding it thinks is the
+right one automatically:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.lexers</span><span class="w"> </span><span class="kn">import</span> <span class="n">PythonLexer</span>
+<span class="n">lexer</span> <span class="o">=</span> <span class="n">PythonLexer</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#x27;chardet&#x27;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The best way is to pass Pygments unicode objects. In that case you can’t get
+unexpected output.</p>
+<p>The formatters now send Unicode objects to the stream if you don’t set the
+output encoding. You can do so by passing the formatters an <cite>encoding</cite> option:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.formatters</span><span class="w"> </span><span class="kn">import</span> <span class="n">HtmlFormatter</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">HtmlFormatter</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#x27;utf-8&#x27;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>You will have to set this option if you have non-ASCII characters in the
+source and the output stream does not accept Unicode written to it!</strong>
+This is the case for all regular files and for terminals.</p>
+<p>Note: The Terminal formatter tries to be smart: if its output stream has an
+<cite>encoding</cite> attribute, and you haven’t set the option, it will encode any
+Unicode string with this encoding before writing it. This is the case for
+<cite>sys.stdout</cite>, for example. The other formatters don’t have that behavior.</p>
+<p>Another note: If you call Pygments via the command line (<cite>pygmentize</cite>),
+encoding is handled differently, see <a class="reference internal" href="cmdline.html"><span class="doc">the command line docs</span></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.7: </span>The formatters now also accept an <cite>outencoding</cite> option which will override
+the <cite>encoding</cite> option if given. This makes it possible to use a single
+options dict with lexers and formatters, and still have different input and
+output encodings.</p>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>

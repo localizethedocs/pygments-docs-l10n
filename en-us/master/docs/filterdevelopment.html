@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en-US" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Write your own filter &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=49efedef"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/filterdevelopment.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Write your own style" href="styledevelopment.html" />
+    <link rel="prev" title="Write your own formatter" href="formatterdevelopment.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Write your own filter</a><ul>
+<li><a class="reference internal" href="#subclassing-filters">Subclassing Filters</a></li>
+<li><a class="reference internal" href="#using-a-decorator">Using a decorator</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="formatterdevelopment.html"
+                        title="previous chapter">Write your own formatter</a></p>
+</div>
+<div>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="styledevelopment.html"
+                        title="next chapter">Write your own style</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/filterdevelopment.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="write-your-own-filter">
+<h1>Write your own filter<a class="headerlink" href="#write-your-own-filter" title="Link to this heading">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.7.</span></p>
+</div>
+<p>Writing own filters is very easy. All you have to do is to subclass
+the <cite>Filter</cite> class and override the <cite>filter</cite> method. Additionally a
+filter is instantiated with some keyword arguments you can use to
+adjust the behavior of your filter.</p>
+<section id="subclassing-filters">
+<h2>Subclassing Filters<a class="headerlink" href="#subclassing-filters" title="Link to this heading">¶</a></h2>
+<p>As an example, we write a filter that converts all <cite>Name.Function</cite> tokens
+to normal <cite>Name</cite> tokens to make the output less colorful.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_bool_opt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygments.token</span><span class="w"> </span><span class="kn">import</span> <span class="n">Name</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygments.filter</span><span class="w"> </span><span class="kn">import</span> <span class="n">Filter</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">UncolorFilter</span><span class="p">(</span><span class="n">Filter</span><span class="p">):</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">):</span>
+        <span class="n">Filter</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">class_too</span> <span class="o">=</span> <span class="n">get_bool_opt</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="s1">&#x27;classtoo&#x27;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lexer</span><span class="p">,</span> <span class="n">stream</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">ttype</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">stream</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">ttype</span> <span class="ow">is</span> <span class="n">Name</span><span class="o">.</span><span class="n">Function</span> <span class="ow">or</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">class_too</span> <span class="ow">and</span>
+                                          <span class="n">ttype</span> <span class="ow">is</span> <span class="n">Name</span><span class="o">.</span><span class="n">Class</span><span class="p">):</span>
+                <span class="n">ttype</span> <span class="o">=</span> <span class="n">Name</span>
+            <span class="k">yield</span> <span class="n">ttype</span><span class="p">,</span> <span class="n">value</span>
+</pre></div>
+</div>
+<p>Some notes on the <cite>lexer</cite> argument: that can be quite confusing since it doesn’t
+need to be a lexer instance. If a filter was added by using the <cite>add_filter()</cite>
+function of lexers, that lexer is registered for the filter. In that case
+<cite>lexer</cite> will refer to the lexer that has registered the filter. It <em>can</em> be used
+to access options passed to a lexer. Because it could be <cite>None</cite> you always have
+to check for that case if you access it.</p>
+</section>
+<section id="using-a-decorator">
+<h2>Using a decorator<a class="headerlink" href="#using-a-decorator" title="Link to this heading">¶</a></h2>
+<p>You can also use the <cite>simplefilter</cite> decorator from the <cite>pygments.filter</cite> module:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_bool_opt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygments.token</span><span class="w"> </span><span class="kn">import</span> <span class="n">Name</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygments.filter</span><span class="w"> </span><span class="kn">import</span> <span class="n">simplefilter</span>
+
+
+<span class="nd">@simplefilter</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">uncolor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lexer</span><span class="p">,</span> <span class="n">stream</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+    <span class="n">class_too</span> <span class="o">=</span> <span class="n">get_bool_opt</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="s1">&#x27;classtoo&#x27;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ttype</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">stream</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ttype</span> <span class="ow">is</span> <span class="n">Name</span><span class="o">.</span><span class="n">Function</span> <span class="ow">or</span> <span class="p">(</span><span class="n">class_too</span> <span class="ow">and</span>
+                                      <span class="n">ttype</span> <span class="ow">is</span> <span class="n">Name</span><span class="o">.</span><span class="n">Class</span><span class="p">):</span>
+            <span class="n">ttype</span> <span class="o">=</span> <span class="n">Name</span>
+        <span class="k">yield</span> <span class="n">ttype</span><span class="p">,</span> <span class="n">value</span>
+</pre></div>
+</div>
+<p>You can instantiate this filter by calling <cite>uncolor(classtoo=True)</cite>, the same
+way that you would have instantiated the previous filter by calling
+<cite>UncolorFilter(classtoo=True)</cite>. Indeed, the decorator automatically ensures that
+<cite>uncolor</cite> is a class which subclasses an internal filter class. The class
+<cite>uncolor</cite> uses the decorated function as a method for filtering.  (That’s why
+there is a <cite>self</cite> argument that you probably won’t end up using in the method.)</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>
