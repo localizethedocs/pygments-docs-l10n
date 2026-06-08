@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-05-03 16:48:17 +0200",
-      "hash" : "98aa256034403c29cf49d8ec5d190002e0fc1c85",
-      "title" : "Merge pull request #3066 from anayrat/explain"
+      "date" : "2026-05-31 08:10:07 +0200",
+      "hash" : "bccbab60da3962553390d4015c351a01d065720c",
+      "title" : "reStructuredText: dot (\".\") and plus (\"+\") are allowed in directive/role name (#3085)"
     }
   },
   "type" : "branch",
