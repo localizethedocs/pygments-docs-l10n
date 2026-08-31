@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pygments master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"POT-Creation-Date: 2026-08-31 15:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,7 +64,7 @@ msgstr ""
 msgid "Muthiah Annamalai -- Ezhil lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:16 ../../../../AUTHORS:288
+#: ../../../../AUTHORS:16 ../../../../AUTHORS:291
 msgid "Nikolay Antipov -- OpenSCAD lexer"
 msgstr ""
 
@@ -228,935 +229,947 @@ msgid "Gabriel Corona -- ASN.1 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:57
-msgid "Christopher Creutzig -- MuPAD lexer"
+msgid "Radu Costache -- Boogie and Civl Verifier lexer improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:58
-msgid "Daniël W. Crompton -- Pike lexer"
+msgid "Christopher Creutzig -- MuPAD lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:59
-msgid "Pete Curry -- bugfixes"
+msgid "Daniël W. Crompton -- Pike lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:60
-msgid "Bryan Davis -- EBNF lexer"
+msgid "Pete Curry -- bugfixes"
 msgstr ""
 
 #: ../../../../AUTHORS:61
-msgid "Bruno Deferrari -- Shen lexer"
+msgid "Bryan Davis -- EBNF lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:62
-msgid "Walter Dörwald -- UL4 lexer"
+msgid "Bruno Deferrari -- Shen lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:63
-msgid "Luke Drummond -- Meson lexer"
+msgid "Walter Dörwald -- UL4 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:64
-msgid "Giedrius Dubinskas -- HTML formatter improvements"
+msgid "Luke Drummond -- Meson lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:65
-msgid "Owen Durni -- Haxe lexer"
+msgid "Giedrius Dubinskas -- HTML formatter improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:66
-msgid "Alexander Dutton, Oxford University Computing Services -- SPARQL lexer"
+msgid "Owen Durni -- Haxe lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:67
-msgid "James Edwards -- Terraform lexer"
+msgid "Alexander Dutton, Oxford University Computing Services -- SPARQL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:68
-msgid "Nick Efford -- Python 3 lexer"
+msgid "James Edwards -- Terraform lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:69
-msgid "Sven Efftinge -- Xtend lexer"
+msgid "Nick Efford -- Python 3 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:70
-msgid "Artem Egorkine -- terminal256 formatter"
+msgid "Sven Efftinge -- Xtend lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:71
-msgid "Matthew Fernandez -- CAmkES lexer"
+msgid "Artem Egorkine -- terminal256 formatter"
 msgstr ""
 
 #: ../../../../AUTHORS:72
-msgid "Paweł Fertyk -- GDScript lexer, HTML formatter improvements"
+msgid "Matthew Fernandez -- CAmkES lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:73
-msgid "Michael Ficarra -- CPSA lexer"
+msgid "Paweł Fertyk -- GDScript lexer, HTML formatter improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:74
-msgid "James H. Fisher -- PostScript lexer"
+msgid "Michael Ficarra -- CPSA lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:75
-msgid "Amanda Fitch, Google LLC -- GoogleSQL lexer"
+msgid "James H. Fisher -- PostScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:76
-msgid "William S. Fulton -- SWIG lexer"
+msgid "Amanda Fitch, Google LLC -- GoogleSQL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:77
-msgid "Carlos Galdino -- Elixir and Elixir Console lexers"
+msgid "William S. Fulton -- SWIG lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:78
-msgid "Michael Galloy -- IDL lexer"
+msgid "Carlos Galdino -- Elixir and Elixir Console lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:79
-msgid "Naveen Garg -- Autohotkey lexer"
+msgid "Michael Galloy -- IDL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:80
-msgid "Simon Garnotel -- FreeFem++ lexer"
+msgid "Naveen Garg -- Autohotkey lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:81
-msgid "Laurent Gautier -- R/S lexer"
+msgid "Simon Garnotel -- FreeFem++ lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:82
-msgid "Alex Gaynor -- PyPy log lexer"
+msgid "Laurent Gautier -- R/S lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:83
-msgid "Richard Gerkin -- Igor Pro lexer"
+msgid "Alex Gaynor -- PyPy log lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:84
-msgid "Alain Gilbert -- TypeScript lexer"
+msgid "Richard Gerkin -- Igor Pro lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:85
-msgid "Alex Gilding -- BlitzBasic lexer"
+msgid "Alain Gilbert -- TypeScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:86
-msgid "GitHub, Inc -- DASM16, Augeas, TOML, and Slash lexers"
+msgid "Alex Gilding -- BlitzBasic lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:87
-msgid "Bertrand Goetzmann -- Groovy lexer"
+msgid "GitHub, Inc -- DASM16, Augeas, TOML, and Slash lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:88
-msgid "Krzysiek Goj -- Scala lexer"
+msgid "Bertrand Goetzmann -- Groovy lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:89
-msgid "Rostyslav Golda -- FloScript lexer"
+msgid "Krzysiek Goj -- Scala lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:90
-msgid "Andrey Golovizin -- BibTeX lexers"
+msgid "Rostyslav Golda -- FloScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:91
-msgid "Matt Good -- Genshi, Cheetah lexers"
+msgid "Andrey Golovizin -- BibTeX lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:92
-msgid "Michał Górny -- vim modeline support"
+msgid "Matt Good -- Genshi, Cheetah lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:93
-msgid "Alex Gosse -- TrafficScript lexer"
+msgid "Michał Górny -- vim modeline support"
 msgstr ""
 
 #: ../../../../AUTHORS:94
+msgid "Alex Gosse -- TrafficScript lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:95
 msgid "Patrick Gotthardt -- PHP namespaces support"
 msgstr ""
 
-#: ../../../../AUTHORS:95 ../../../../AUTHORS:276
+#: ../../../../AUTHORS:96 ../../../../AUTHORS:279
 msgid "Hubert Gruniaux -- C and C++ lexer improvements"
 msgstr ""
 
-#: ../../../../AUTHORS:96
+#: ../../../../AUTHORS:97
 msgid "Olivier Guibe -- Asymptote lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:97
-msgid "Phil Hagelberg -- Fennel lexer"
-msgstr ""
-
 #: ../../../../AUTHORS:98
-msgid "Florian Hahn -- Boogie lexer"
+msgid "Armin Günther -- Go lexer improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:99
-msgid "Martin Harriman -- SNOBOL lexer"
+msgid "Phil Hagelberg -- Fennel lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:100
-msgid "Matthew Harrison -- SVG formatter"
+msgid "Florian Hahn -- Boogie lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:101
-msgid "Steven Hazel -- Tcl lexer"
+msgid "Martin Harriman -- SNOBOL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:102
-msgid "Dan Michael Heggø -- Turtle lexer"
+msgid "Matthew Harrison -- SVG formatter"
 msgstr ""
 
 #: ../../../../AUTHORS:103
-msgid "Aslak Hellesøy -- Gherkin lexer"
+msgid "Steven Hazel -- Tcl lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:104
-msgid "Greg Hendershott -- Racket lexer"
+msgid "Dan Michael Heggø -- Turtle lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:105
-msgid "Justin Hendrick -- ParaSail lexer"
+msgid "Aslak Hellesøy -- Gherkin lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:106
-msgid "Jordi Gutiérrez Hermoso -- Octave lexer"
+msgid "Greg Hendershott -- Racket lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:107
-msgid "David Hess, Fish Software, Inc. -- Objective-J lexer"
+msgid "Justin Hendrick -- ParaSail lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:108
-msgid "Ken Hilton -- Typographic Number Theory and Arrow lexers"
+msgid "Jordi Gutiérrez Hermoso -- Octave lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:109
-msgid "Varun Hiremath -- Debian control lexer"
+msgid "David Hess, Fish Software, Inc. -- Objective-J lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:110
-msgid "Rob Hoelz -- Perl 6 lexer"
+msgid "Ken Hilton -- Typographic Number Theory and Arrow lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:111
-msgid "Doug Hogan -- Mscgen lexer"
+msgid "Varun Hiremath -- Debian control lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:112
-msgid "Ben Hollis -- Mason lexer"
+msgid "Rob Hoelz -- Perl 6 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:113
-msgid "Max Horn -- GAP lexer"
+msgid "Doug Hogan -- Mscgen lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:114
-msgid "Fred Hornsey -- OMG IDL Lexer"
+msgid "Ben Hollis -- Mason lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:115
-msgid "Alastair Houghton -- Lexer inheritance facility"
+msgid "Max Horn -- GAP lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:116
-msgid "Tim Howard -- BlitzMax lexer"
+msgid "Fred Hornsey -- OMG IDL Lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:117
-msgid "Dustin Howett -- Logos lexer"
+msgid "Alastair Houghton -- Lexer inheritance facility"
 msgstr ""
 
 #: ../../../../AUTHORS:118
-msgid "Ivan Inozemtsev -- Fantom lexer"
+msgid "Tim Howard -- BlitzMax lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:119
+msgid "Dustin Howett -- Logos lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:120
+msgid "Ivan Inozemtsev -- Fantom lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:121
 msgid ""
 "Hiroaki Itoh -- Shell console rewrite, Lexers for PowerShell session, MSDOS "
 "session, BC, WDiff"
 msgstr ""
 
-#: ../../../../AUTHORS:121
+#: ../../../../AUTHORS:123
 msgid "Brian R. Jackson -- Tea lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:122
+#: ../../../../AUTHORS:124
 msgid "Alex Jeffery, ChromaWay AB -- Rell lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:123
+#: ../../../../AUTHORS:125
 msgid "Christian Jann -- ShellSession lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:124
+#: ../../../../AUTHORS:126
 msgid ""
 "Jonas Camillus Jeppesen -- Line numbers and line highlighting for RTF-"
 "formatter"
 msgstr ""
 
-#: ../../../../AUTHORS:126
+#: ../../../../AUTHORS:128
 msgid "Dennis Kaarsemaker -- sources.list lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:127
+#: ../../../../AUTHORS:129
 msgid "Dmitri Kabak -- Inferno Limbo lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:128
+#: ../../../../AUTHORS:130
 msgid "Igor Kalnitsky -- vhdl lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:129
+#: ../../../../AUTHORS:131
 msgid "Colin Kennedy - USD lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:130
+#: ../../../../AUTHORS:132
 msgid "Alexander Kit -- MaskJS lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:131
+#: ../../../../AUTHORS:133
 msgid "Pekka Klärck -- Robot Framework lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:132
+#: ../../../../AUTHORS:134
 msgid "Gerwin Klein -- Isabelle lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:133
+#: ../../../../AUTHORS:135
 msgid "Eric Knibbe -- Lasso lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:134
+#: ../../../../AUTHORS:136
 msgid "Stepan Koltsov -- Clay lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:135
+#: ../../../../AUTHORS:137
 msgid "Oliver Kopp - Friendly grayscale style"
 msgstr ""
 
-#: ../../../../AUTHORS:136
+#: ../../../../AUTHORS:138
 msgid "Adam Koprowski -- Opa lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:137
+#: ../../../../AUTHORS:139
 msgid "Benjamin Kowarsch -- Modula-2 lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:138
+#: ../../../../AUTHORS:140
 msgid "Domen Kožar -- Nix lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:139
+#: ../../../../AUTHORS:141
 msgid "Oleh Krekel -- Emacs Lisp lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:140
+#: ../../../../AUTHORS:142
 msgid "Alexander Kriegisch -- Kconfig and AspectJ lexers"
 msgstr ""
 
-#: ../../../../AUTHORS:141
+#: ../../../../AUTHORS:143
 msgid "Marek Kubica -- Scheme lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:142
+#: ../../../../AUTHORS:144
 msgid "Jochen Kupperschmidt -- Markdown processor"
 msgstr ""
 
-#: ../../../../AUTHORS:143
+#: ../../../../AUTHORS:145
 msgid "Gerd Kurzbach -- Modelica lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:144
+#: ../../../../AUTHORS:146
 msgid "Jon Larimer, Google Inc. -- Smali lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:145
+#: ../../../../AUTHORS:147
 msgid "Olov Lassus -- Dart lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:146
+#: ../../../../AUTHORS:148
 msgid "Matt Layman -- TAP lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:147
+#: ../../../../AUTHORS:149
 msgid "Dan Lazin, Google LLC -- GoogleSQL lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:148
+#: ../../../../AUTHORS:150
 msgid "Kristian Lyngstøl -- Varnish lexers"
 msgstr ""
 
-#: ../../../../AUTHORS:149
+#: ../../../../AUTHORS:151
 msgid "Sylvestre Ledru -- Scilab lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:150
+#: ../../../../AUTHORS:152
 msgid "Chee Sing Lee -- Flatline lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:151
+#: ../../../../AUTHORS:153
 msgid "Mark Lee -- Vala lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:152
+#: ../../../../AUTHORS:154
 msgid "Thomas Linder Puls -- Visual Prolog lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:153
+#: ../../../../AUTHORS:155
 msgid "Pete Lomax -- Phix lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:154
+#: ../../../../AUTHORS:156
 msgid "Valentin Lorentz -- C++ lexer improvements"
 msgstr ""
 
-#: ../../../../AUTHORS:155
+#: ../../../../AUTHORS:157
 msgid "Ben Mabey -- Gherkin lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:156
+#: ../../../../AUTHORS:158
 msgid "Angus MacArthur -- QML lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:157
+#: ../../../../AUTHORS:159
 msgid "Louis Mandel -- X10 lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:158
+#: ../../../../AUTHORS:160
 msgid "Louis Marchand -- Eiffel lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:159
+#: ../../../../AUTHORS:161
 msgid "Simone Margaritelli -- Hybris lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:160
+#: ../../../../AUTHORS:162
 msgid "Tim Martin - World of Warcraft TOC lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:161
+#: ../../../../AUTHORS:163
 msgid "Kirk McDonald -- D lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:162
+#: ../../../../AUTHORS:164
 msgid "Gordon McGregor -- SystemVerilog lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:163
+#: ../../../../AUTHORS:165
 msgid "Stephen McKamey -- Duel/JBST lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:164
+#: ../../../../AUTHORS:166
 msgid "Brian McKenna -- F# lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:165
+#: ../../../../AUTHORS:167
 msgid "Charles McLaughlin -- Puppet lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:166
+#: ../../../../AUTHORS:168
 msgid ""
 "Kurt McKee -- Tera Term macro lexer, PostgreSQL updates, MySQL overhaul, "
 "JSON lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:167
+#: ../../../../AUTHORS:169
 msgid "Joe Eli McIlvain -- Savi lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:168
+#: ../../../../AUTHORS:170
 msgid "Lukas Meuser -- BBCode formatter, Lua lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:169
-msgid "Cat Miller -- Pig lexer"
-msgstr ""
-
-#: ../../../../AUTHORS:170
-msgid "Paul Miller -- LiveScript lexer"
-msgstr ""
-
 #: ../../../../AUTHORS:171
-msgid "Hong Minhee -- HTTP lexer"
+msgid "Bruno Mesquita -- Night Owl style"
 msgstr ""
 
 #: ../../../../AUTHORS:172
-msgid "Michael Mior -- Awk lexer"
+msgid "Cat Miller -- Pig lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:173
-msgid "Bruce Mitchener -- Dylan lexer rewrite"
+msgid "Paul Miller -- LiveScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:174
-msgid "Reuben Morais -- SourcePawn lexer"
+msgid "Hong Minhee -- HTTP lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:175
-msgid "Jon Morton -- Rust lexer"
+msgid "Michael Mior -- Awk lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:176
-msgid "Paulo Moura -- Logtalk lexer"
+msgid "Bruce Mitchener -- Dylan lexer rewrite"
 msgstr ""
 
 #: ../../../../AUTHORS:177
-msgid "Mher Movsisyan -- DTD lexer"
+msgid "Reuben Morais -- SourcePawn lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:178
-msgid "Dejan Muhamedagic -- Crmsh lexer"
+msgid "Jon Morton -- Rust lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:179
-msgid "Adrien Nayrat -- PostgreSQL Explain lexer"
+msgid "Paulo Moura -- Logtalk lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:180
-msgid "Ana Nelson -- Ragel, ANTLR, R console lexers"
+msgid "Mher Movsisyan -- DTD lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:181
-msgid "David Neto, Google LLC -- WebGPU Shading Language lexer"
+msgid "Dejan Muhamedagic -- Crmsh lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:182
-msgid "Kurt Neufeld -- Markdown lexer"
+msgid "Adrien Nayrat -- PostgreSQL Explain lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:183
-msgid "Nam T. Nguyen -- Monokai style"
+msgid "Ana Nelson -- Ragel, ANTLR, R console lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:184
-msgid "Jesper Noehr -- HTML formatter \"anchorlinenos\""
+msgid "David Neto, Google LLC -- WebGPU Shading Language lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:185
-msgid "Mike Nolta -- Julia lexer"
+msgid "Kurt Neufeld -- Markdown lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:186
-msgid "Avery Nortonsmith -- Pointless lexer"
+msgid "Nam T. Nguyen -- Monokai style"
 msgstr ""
 
 #: ../../../../AUTHORS:187
-msgid "Jonas Obrist -- BBCode lexer"
+msgid "Jesper Noehr -- HTML formatter \"anchorlinenos\""
 msgstr ""
 
 #: ../../../../AUTHORS:188
-msgid "Edward O'Callaghan -- Cryptol lexer"
+msgid "Mike Nolta -- Julia lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:189
-msgid "David Oliva -- Rebol lexer"
+msgid "Avery Nortonsmith -- Pointless lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:190
-msgid "Pat Pannuto -- nesC lexer"
+msgid "Jonas Obrist -- BBCode lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:191
-msgid "Jon Parise -- Protocol buffers and Thrift lexers"
+msgid "Edward O'Callaghan -- Cryptol lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:192
-msgid "Benjamin Peterson -- Test suite refactoring"
+msgid "David Oliva -- Rebol lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:193
-msgid "Ronny Pfannschmidt -- BBCode lexer"
+msgid "Pat Pannuto -- nesC lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:194
-msgid "Dominik Picheta -- Nimrod lexer"
+msgid "Jon Parise -- Protocol buffers and Thrift lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:195
-msgid "Andrew Pinkham -- RTF Formatter Refactoring"
+msgid "Benjamin Peterson -- Test suite refactoring"
 msgstr ""
 
 #: ../../../../AUTHORS:196
-msgid "Clément Prévost -- UrbiScript lexer"
+msgid "Ronny Pfannschmidt -- BBCode lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:197
-msgid "Tanner Prynn -- cmdline -x option and loading lexers from files"
+msgid "Dominik Picheta -- Nimrod lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:198
-msgid "Oleh Prypin -- Crystal lexer (based on Ruby lexer)"
+msgid "Andrew Pinkham -- RTF Formatter Refactoring"
 msgstr ""
 
 #: ../../../../AUTHORS:199
-msgid "Nick Psaris -- K and Q lexers"
+msgid "Clément Prévost -- UrbiScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:200
-msgid "Xidorn Quan -- Web IDL lexer"
+msgid "Tanner Prynn -- cmdline -x option and loading lexers from files"
 msgstr ""
 
 #: ../../../../AUTHORS:201
-msgid "Elias Rabel -- Fortran fixed form lexer"
+msgid "Oleh Prypin -- Crystal lexer (based on Ruby lexer)"
 msgstr ""
 
 #: ../../../../AUTHORS:202
-msgid "raichoo -- Idris lexer"
+msgid "Nick Psaris -- K and Q lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:203
-msgid "Daniel Ramirez -- GDScript lexer"
+msgid "Xidorn Quan -- Web IDL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:204
-msgid "Kashif Rasul -- CUDA lexer"
+msgid "Elias Rabel -- Fortran fixed form lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:205
-msgid "Nathan Reed -- HLSL lexer"
+msgid "raichoo -- Idris lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:206
-msgid "Justin Reidy -- MXML lexer"
+msgid "Daniel Ramirez -- GDScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:207
-msgid "Jonathon Reinhart, Google LLC -- Soong lexer"
+msgid "Kashif Rasul -- CUDA lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:208
-msgid "Norman Richards -- JSON lexer"
+msgid "Nathan Reed -- HLSL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:209
-msgid "Corey Richardson -- Rust lexer updates"
+msgid "Justin Reidy -- MXML lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:210
-msgid "Fabrizio Riguzzi -- cplint leder"
+msgid "Jonathon Reinhart, Google LLC -- Soong lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:211
-msgid "Lubomir Rintel -- GoodData MAQL and CL lexers"
+msgid "Norman Richards -- JSON lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:212
-msgid "Andre Roberge -- Tango style"
+msgid "Corey Richardson -- Rust lexer updates"
 msgstr ""
 
 #: ../../../../AUTHORS:213
-msgid "Georg Rollinger -- HSAIL lexer"
+msgid "Fabrizio Riguzzi -- cplint leder"
 msgstr ""
 
 #: ../../../../AUTHORS:214
-msgid "Michiel Roos -- TypoScript lexer"
+msgid "Lubomir Rintel -- GoodData MAQL and CL lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:215
-msgid "Konrad Rudolph -- LaTeX formatter enhancements"
+msgid "Andre Roberge -- Tango style"
 msgstr ""
 
 #: ../../../../AUTHORS:216
-msgid "Mario Ruggier -- Evoque lexers"
+msgid "Georg Rollinger -- HSAIL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:217
-msgid "Miikka Salminen -- Lovelace style, Hexdump lexer, lexer enhancements"
+msgid "Michiel Roos -- TypoScript lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:218
-msgid "Stou Sandalski -- NumPy, FORTRAN, tcsh and XSLT lexers"
+msgid "Konrad Rudolph -- LaTeX formatter enhancements"
 msgstr ""
 
 #: ../../../../AUTHORS:219
-msgid "Matteo Sasso -- Common Lisp lexer"
+msgid "Mario Ruggier -- Evoque lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:220
-msgid "Joe Schafer -- Ada lexer"
+msgid "Miikka Salminen -- Lovelace style, Hexdump lexer, lexer enhancements"
 msgstr ""
 
 #: ../../../../AUTHORS:221
-msgid "Max Schillinger -- TiddlyWiki5 lexer"
+msgid "Stou Sandalski -- NumPy, FORTRAN, tcsh and XSLT lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:222
-msgid "Andrew Schmidt -- X++ lexer"
+msgid "Matteo Sasso -- Common Lisp lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:223
-msgid "Ken Schutte -- Matlab lexers"
+msgid "Joe Schafer -- Ada lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:224
-msgid "René Schwaiger -- Rainbow Dash style"
+msgid "Max Schillinger -- TiddlyWiki5 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:225
-msgid "Sebastian Schweizer -- Whiley lexer"
+msgid "Andrew Schmidt -- X++ lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:226
-msgid "Tassilo Schweyer -- Io, MOOCode lexers"
+msgid "Ken Schutte -- Matlab lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:227
-msgid "Pablo Seminario -- PromQL lexer"
+msgid "René Schwaiger -- Rainbow Dash style"
 msgstr ""
 
 #: ../../../../AUTHORS:228
-msgid "Ted Shaw -- AutoIt lexer"
+msgid "Sebastian Schweizer -- Whiley lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:229
-msgid "Joerg Sieker -- ABAP lexer"
+msgid "Tassilo Schweyer -- Io, MOOCode lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:230
-msgid "Robert Simmons -- Standard ML lexer"
+msgid "Pablo Seminario -- PromQL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:231
-msgid "Kirill Simonov -- YAML lexer"
+msgid "Ted Shaw -- AutoIt lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:232
-msgid "Corbin Simpson -- Monte lexer"
+msgid "Joerg Sieker -- ABAP lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:233
-msgid "Ville Skyttä -- ASCII armored lexer"
+msgid "Robert Simmons -- Standard ML lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:234
-msgid "Alexander Smishlajev -- Visual FoxPro lexer"
+msgid "Kirill Simonov -- YAML lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:235
-msgid "Steve Spigarelli -- XQuery lexer"
+msgid "Corbin Simpson -- Monte lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:236
-msgid "Jerome St-Louis -- eC lexer"
+msgid "Ville Skyttä -- ASCII armored lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:237
-msgid "Camil Staps -- Clean and NuSMV lexers; Solarized style"
+msgid "Alexander Smishlajev -- Visual FoxPro lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:238
-msgid "James Strachan -- Kotlin lexer"
+msgid "Steve Spigarelli -- XQuery lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:239
-msgid "Tom Stuart -- Treetop lexer"
+msgid "Jerome St-Louis -- eC lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:240
-msgid "Colin Sullivan -- SuperCollider lexer"
+msgid "Camil Staps -- Clean and NuSMV lexers; Solarized style"
 msgstr ""
 
 #: ../../../../AUTHORS:241
-msgid "Ben Swift -- Extempore lexer"
+msgid "James Strachan -- Kotlin lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:242
-msgid "tatt61880 -- Kuin lexer"
+msgid "Tom Stuart -- Treetop lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:243
-msgid "Edoardo Tenani -- Arduino lexer"
+msgid "Colin Sullivan -- SuperCollider lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:244
-msgid "Tiberius Teng -- default style overhaul"
+msgid "Ben Swift -- Extempore lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:245
-msgid "Jeremy Thurgood -- Erlang, Squid config lexers"
+msgid "tatt61880 -- Kuin lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:246
-msgid "Brian Tiffin -- OpenCOBOL lexer"
+msgid "Edoardo Tenani -- Arduino lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:247
-msgid "Bob Tolbert -- Hy lexer"
+msgid "Tiberius Teng -- default style overhaul"
 msgstr ""
 
 #: ../../../../AUTHORS:248
-msgid "Doug Torrance -- Macaulay2 lexer"
+msgid "Jeremy Thurgood -- Erlang, Squid config lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:249
-msgid "Matthias Trute -- Forth lexer"
+msgid "Brian Tiffin -- OpenCOBOL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:250
-msgid "Tuoa Spi T4 -- Bdd lexer"
+msgid "Bob Tolbert -- Hy lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:251
-msgid "Erick Tryzelaar -- Felix lexer"
+msgid "Doug Torrance -- Macaulay2 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:252
-msgid "Alexander Udalov -- Kotlin lexer improvements"
+msgid "Matthias Trute -- Forth lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:253
-msgid "Thomas Van Doren -- Chapel lexer"
+msgid "Tuoa Spi T4 -- Bdd lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:254
-msgid "Dave Van Ee -- Uxntal lexer updates"
+msgid "Erick Tryzelaar -- Felix lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:255
-msgid "Daniele Varrazzo -- PostgreSQL lexers"
+msgid "Alexander Udalov -- Kotlin lexer improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:256
-msgid "Abe Voelker -- OpenEdge ABL lexer"
+msgid "Thomas Van Doren -- Chapel lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:257
-msgid "Pepijn de Vos -- HTML formatter CTags support"
+msgid "Dave Van Ee -- Uxntal lexer updates"
 msgstr ""
 
 #: ../../../../AUTHORS:258
-msgid "Matthias Vallentin -- Bro lexer"
+msgid "Daniele Varrazzo -- PostgreSQL lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:259
-msgid "Benoît Vinot -- AMPL lexer"
+msgid "Abe Voelker -- OpenEdge ABL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:260
-msgid "Linh Vu Hong -- RSL lexer"
+msgid "Pepijn de Vos -- HTML formatter CTags support"
 msgstr ""
 
 #: ../../../../AUTHORS:261
-msgid "Taavi Väänänen -- Debian control, PHP lexers"
+msgid "Matthias Vallentin -- Bro lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:262
-msgid "Immanuel Washington -- Smithy lexer"
+msgid "Benoît Vinot -- AMPL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:263
-msgid "Nathan Weizenbaum -- Haml and Sass lexers"
+msgid "Linh Vu Hong -- RSL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:264
-msgid "Nathan Whetsell -- Csound lexers"
+msgid "Taavi Väänänen -- Debian control, PHP lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:265
-msgid "Dietmar Winkler -- Modelica lexer"
+msgid "Immanuel Washington -- Smithy lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:266
-msgid "Nils Winter -- Smalltalk lexer"
+msgid "Nathan Weizenbaum -- Haml and Sass lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:267
-msgid "Trevor Woerner -- BitBake lexer"
+msgid "Nathan Whetsell -- Csound lexers"
 msgstr ""
 
 #: ../../../../AUTHORS:268
-msgid "Davy Wybiral -- Clojure lexer"
+msgid "Dietmar Winkler -- Modelica lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:269
-msgid "Whitney Young -- ObjectiveC lexer"
+msgid "Nils Winter -- Smalltalk lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:270
-msgid "Diego Zamboni -- CFengine3 lexer"
+msgid "Trevor Woerner -- BitBake lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:271
-msgid "Enrique Zamudio -- Ceylon lexer"
+msgid "Davy Wybiral -- Clojure lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:272
-msgid "Alex Zimin -- Nemerle lexer"
+msgid "Whitney Young -- ObjectiveC lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:273
-msgid "Rob Zimmerman -- Kal lexer"
+msgid "Diego Zamboni -- CFengine3 lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:274
-msgid "Evgenii Zheltonozhskii -- Maple lexer"
+msgid "Enrique Zamudio -- Ceylon lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:275
-msgid "Vincent Zurczak -- Roboconf lexer"
+msgid "Alex Zimin -- Nemerle lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:276
+msgid "Rob Zimmerman -- Kal lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:277
-msgid "Thomas Symalla -- AMDGPU Lexer"
+msgid "Evgenii Zheltonozhskii -- Maple lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:278
-msgid "15b3 -- Image Formatter improvements"
-msgstr ""
-
-#: ../../../../AUTHORS:279
-msgid "Fabian Neumann -- CDDL lexer"
+msgid "Vincent Zurczak -- Roboconf lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:280
-msgid "Thomas Duboucher -- CDDL lexer"
+msgid "Thomas Symalla -- AMDGPU Lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:281
-msgid "Philipp Imhof -- Pango Markup formatter"
+msgid "15b3 -- Image Formatter improvements"
 msgstr ""
 
 #: ../../../../AUTHORS:282
-msgid "Thomas Voss -- Sed lexer"
+msgid "Fabian Neumann -- CDDL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:283
-msgid "Martin Fischer -- WCAG contrast testing"
+msgid "Thomas Duboucher -- CDDL lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:284
-msgid "Marc Auberer -- Spice lexer"
+msgid "Philipp Imhof -- Pango Markup formatter"
 msgstr ""
 
 #: ../../../../AUTHORS:285
-msgid "Amr Hesham -- Carbon lexer"
+msgid "Thomas Voss -- Sed lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:286
-msgid "diskdance -- Wikitext lexer"
+msgid "Martin Fischer -- WCAG contrast testing"
 msgstr ""
 
 #: ../../../../AUTHORS:287
-msgid "vanillajonathan -- PRQL lexer"
+msgid "Marc Auberer -- Spice lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:288
+msgid "Amr Hesham -- Carbon lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:289
-msgid "Markus Meyer, Nextron Systems -- YARA lexer"
+msgid "diskdance -- Wikitext lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:290
-msgid "Hannes Römer -- Mojo lexer"
+msgid "vanillajonathan -- PRQL lexer"
 msgstr ""
 
-#: ../../../../AUTHORS:291
-msgid "Jan Frederik Schaefer -- PDDL lexer"
+#: ../../../../AUTHORS:292
+msgid "Markus Meyer, Nextron Systems -- YARA lexer"
 msgstr ""
 
 #: ../../../../AUTHORS:293
+msgid "Hannes Römer -- Mojo lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:294
+msgid "Jan Frederik Schaefer -- PDDL lexer"
+msgstr ""
+
+#: ../../../../AUTHORS:296
 msgid "Many thanks for all contributions!"
 msgstr ""
