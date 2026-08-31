@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/plugins.rst:3
+msgid "Plugins"
+msgstr ""
+
+#: ../../../docs/plugins.rst:5
+msgid ""
+"If you want to extend Pygments without hacking the sources, you can use "
+"package `entry points`_ to add new lexers, formatters, styles or filters as "
+"if they were in the Pygments core."
+msgstr ""
+
+#: ../../../docs/plugins.rst:11
+msgid ""
+"The idea is to create a Python package, declare how extends Pygments, and "
+"install it."
+msgstr ""
+
+#: ../../../docs/plugins.rst:14
+msgid ""
+"This will allow you to use your custom lexers/... with the ``pygmentize`` "
+"command. They will also be found by the lookup functions (``lexers."
+"get_lexer_by_name`` et al.), which makes them available to tools such as "
+"Sphinx, mkdocs, ..."
+msgstr ""
+
+#: ../../../docs/plugins.rst:21
+msgid "Defining plugins through entry points"
+msgstr ""
+
+#: ../../../docs/plugins.rst:23
+msgid ""
+"We have created a repository with a project template for defining your own "
+"plugins.  It is available at"
+msgstr ""
+
+#: ../../../docs/plugins.rst:26
+msgid "https://github.com/pygments/pygments-plugin-scaffolding"
+msgstr ""
+
+#: ../../../docs/plugins.rst:30
+msgid "Extending The Core"
+msgstr ""
+
+#: ../../../docs/plugins.rst:32
+msgid ""
+"If you have written a Pygments plugin that is open source, please inform us "
+"about that. There is a high chance that we'll add it to the Pygments "
+"distribution."
+msgstr ""

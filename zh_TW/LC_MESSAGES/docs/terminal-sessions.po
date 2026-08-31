@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/terminal-sessions.rst:3
+msgid "Terminal sessions"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:5
+msgid ""
+"Pygments support the parsing and highlighting of terminal sessions, like "
+"command-line shells, interactive consoles and language `REPL <https://en."
+"wikipedia.org/wiki/Read–eval–print_loop>`_."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:9
+msgid "They are typically command lines or code, mixed with generic output."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:11
+msgid ""
+"Examples for each can be found in the :doc:`lexer <lexers>` documentation."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:15
+msgid "Operating system shells"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:17
+msgid ""
+"These lexers are expecting a prompt to identify user input. So to highlight "
+"a shell session, prefix your code snippet with a specially formatted prompt."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:20
+msgid "They are typically named ``<shell> Session``."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:24
+msgid "Interactive consoles"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:26
+msgid ""
+"Similarly to systems shells, Pygments recognize a variety of interactive "
+"language sessions."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:29
+msgid ""
+"Their IDs typically follow the ``<language>-console`` or ``<language>-repl`` "
+"pattern."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:34
+msgid "Generic output"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:36
+msgid ""
+"To display standalone terminal output and keep styling consistent, you can "
+"use the generic ``output`` lexer."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:41
+msgid "ANSI rendering"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:43
+msgid ""
+"In all the lexers above, the command results are parsed as generic output. "
+"Which means they are rendered as-is, without any styling applied, for "
+"example by ANSI codes."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:46
+msgid "Here is a couple of third-party projects covering this use-case:"
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:48
+msgid ""
+"`pygments-ansi-color <https://github.com/chriskuehl/pygments-ansi-color>`_: "
+"implements a new lexer and formatter to parse and render pure ANSI content."
+msgstr ""
+
+#: ../../../docs/terminal-sessions.rst:51
+msgid ""
+"`Click Extra <https://github.com/kdeldycke/click-extra>`_: adds `ANSI-"
+"capable lexers <https://kdeldycke.github.io/click-extra/pygments.html#ansi-"
+"language-lexers>`_ for each language listed above."
+msgstr ""
