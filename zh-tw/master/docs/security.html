@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Security considerations &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=88a78f1b"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/security.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="prev" title="Full contributor list" href="authors.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Security considerations</a><ul>
+<li><a class="reference internal" href="#pip-audit-cves-and-github-security-advisories"><cite>pip-audit</cite>, CVEs, and GitHub security advisories</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上個主題</h4>
+  <p class="topless"><a href="authors.html"
+                        title="上一章">Full contributor list</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/security.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="前往" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="security-considerations">
+<h1>Security considerations<a class="headerlink" href="#security-considerations" title="連結到這個標頭">¶</a></h1>
+<p>Pygments provides no guarantees on execution time, which needs to be taken
+into consideration when using Pygments to process arbitrary user inputs. For
+example, if you have a web service which uses Pygments for highlighting, there
+may be inputs which will cause the Pygments process to run &quot;forever&quot; and/or use
+significant amounts of memory. This can subsequently be used to perform a
+remote denial-of-service attack on the server if the processes are not
+terminated quickly.</p>
+<p>Unfortunately, it's practically impossible to harden Pygments itself against
+those issues: Some regular expressions can result in &quot;catastrophic
+backtracking&quot;, but other bugs like incorrect matchers can also
+cause similar problems, and there is no way to find them in an automated fashion
+(short of solving the halting problem.) Pygments has extensive unit tests,
+automated randomized testing, and is also tested by <a class="reference external" href="https://github.com/google/oss-fuzz/tree/master/projects/pygments">OSS-Fuzz</a>,
+but we will never be able to eliminate all bugs in this area.</p>
+<p>Our recommendations are:</p>
+<ul class="simple">
+<li><p>Ensure that the Pygments process is <em>terminated</em> after a reasonably short
+timeout. In general Pygments should take seconds at most for reasonably-sized
+input.</p></li>
+<li><p><em>Limit</em> the number of concurrent Pygments processes to avoid oversubscription
+of resources.</p></li>
+</ul>
+<p>The Pygments authors will treat any bug resulting in long processing times with
+high priority -- it's one of those things that will be fixed in a patch release.
+When reporting a bug where you suspect super-linear execution times, please make
+sure to attach an input to reproduce it.</p>
+<section id="pip-audit-cves-and-github-security-advisories">
+<h2><cite>pip-audit</cite>, CVEs, and GitHub security advisories<a class="headerlink" href="#pip-audit-cves-and-github-security-advisories" title="連結到這個標頭">¶</a></h2>
+<p>We've seen various CVEs and security advisories filed against Pygments ignoring
+the guideline above. Typically, they'll report a ReDoS (remote
+denial-of-service) vulnerability in Pygments. Generally those advisories will
+provide some input that causes a regex to go into catastrophic backtracking or
+similar, resulting in long processing times. First of all, please note that
+Pygments on its own does not allow remote input -- it's a command line
+application or library, but it has no RPC mechanism, nor does it start a server
+by default. The &quot;remote&quot; part only appears when Pygments is wrapped in a service
+that allows arbitrary user input. In this case, we <em>strongly</em> recommend to take
+the security considerations above into account, specifically sandboxing and
+resource limitations.</p>
+<p>If your CI pipeline fails because of automated checks for CVEs, we kindly ask
+you to review the particular issue and consider adding an exception before
+asking for an urgent fix. Especially if you're using Pygments for your
+documentation and not wrapping it into a service, you are <em>not</em> vulnerable (the
+worst thing that can happen is that someone writes a PR which will cause a
+CI job that builds the docs to time out, but that's what timeouts are for, and
+if someone can send a PR there are many ways to attack your CI infrastructure.)
+<cite>pip-audit</cite> for example allows you to selectively ignore individual security
+issues, making it easy for you to fix your CI while we prepare a new release.</p>
+<p>We try to fix security issues, but we do ask everyone to treat user-provided
+input as dangerous and protect in depth against it. If you find a way to make
+Pygments execute arbitrary code, we'll do our best to fix it quickly, but if it
+is a hang, the guidance above applies. We also recommend reading:
+<a class="reference external" href="https://lwn.net/Articles/944399/">https://lwn.net/Articles/944399/</a></p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>

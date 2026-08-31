@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Plugins &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=88a78f1b"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/plugins.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Terminal Tips" href="terminaltips.html" />
+    <link rel="prev" title="Write your own style" href="styledevelopment.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Plugins</a><ul>
+<li><a class="reference internal" href="#defining-plugins-through-entry-points">Defining plugins through entry points</a></li>
+<li><a class="reference internal" href="#extending-the-core">Extending The Core</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上個主題</h4>
+  <p class="topless"><a href="styledevelopment.html"
+                        title="上一章">Write your own style</a></p>
+</div>
+<div>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="terminaltips.html"
+                        title="下一章">Terminal Tips</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/plugins.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="前往" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="plugins">
+<h1>Plugins<a class="headerlink" href="#plugins" title="連結到這個標頭">¶</a></h1>
+<p>If you want to extend Pygments without hacking the sources, you can use
+package <a class="reference external" href="https://packaging.python.org/en/latest/guides/creating-and-discovering-plugins/">entry points</a> to add new lexers, formatters, styles or filters
+as if they were in the Pygments core.</p>
+<p>The idea is to create a Python package, declare how extends Pygments,
+and install it.</p>
+<p>This will allow you to use your custom lexers/... with the
+<code class="docutils literal notranslate"><span class="pre">pygmentize</span></code> command. They will also be found by the lookup functions
+(<code class="docutils literal notranslate"><span class="pre">lexers.get_lexer_by_name</span></code> et al.), which makes them available to
+tools such as Sphinx, mkdocs, ...</p>
+<section id="defining-plugins-through-entry-points">
+<h2>Defining plugins through entry points<a class="headerlink" href="#defining-plugins-through-entry-points" title="連結到這個標頭">¶</a></h2>
+<p>We have created a repository with a project template for defining your
+own plugins.  It is available at</p>
+<p><a class="reference external" href="https://github.com/pygments/pygments-plugin-scaffolding">https://github.com/pygments/pygments-plugin-scaffolding</a></p>
+</section>
+<section id="extending-the-core">
+<h2>Extending The Core<a class="headerlink" href="#extending-the-core" title="連結到這個標頭">¶</a></h2>
+<p>If you have written a Pygments plugin that is open source, please inform us
+about that. There is a high chance that we'll add it to the Pygments
+distribution.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>
