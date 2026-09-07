@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contributing to Pygments &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=f8b8afec"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/contributing.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Pygments changelog" href="changelog.html" />
+    <link rel="prev" title="Using Pygments in various scenarios" href="integrate.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Contributing to Pygments</a><ul>
+<li><a class="reference internal" href="#licensing">Licensing</a></li>
+<li><a class="reference internal" href="#general-contribution-checklist">General contribution checklist</a></li>
+<li><a class="reference internal" href="#goals-non-goals-of-pygments">Goals &amp; non-goals of Pygments</a><ul>
+<li><a class="reference internal" href="#python-support">Python support</a></li>
+<li><a class="reference internal" href="#validation">Validation</a></li>
+<li><a class="reference internal" href="#language-support">Language support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上一主题</h4>
+  <p class="topless"><a href="integrate.html"
+                        title="上一章">Using Pygments in various scenarios</a></p>
+</div>
+<div>
+  <h4>下一主题</h4>
+  <p class="topless"><a href="changelog.html"
+                        title="下一章">Pygments changelog</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/contributing.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="contributing-to-pygments">
+<h1>Contributing to Pygments<a class="headerlink" href="#contributing-to-pygments" title="链接到此标题。">¶</a></h1>
+<p>Thanks for your interest in contributing! Please read the following
+guidelines.</p>
+<section id="licensing">
+<h2>Licensing<a class="headerlink" href="#licensing" title="链接到此标题。">¶</a></h2>
+<p>The code is distributed under the BSD 2-clause license. Contributors making pull
+requests must agree that they are able and willing to put their contributions
+under that license.</p>
+</section>
+<section id="general-contribution-checklist">
+<h2>General contribution checklist<a class="headerlink" href="#general-contribution-checklist" title="链接到此标题。">¶</a></h2>
+<ul class="simple">
+<li><p>Check the documentation for how to write
+<a class="reference internal" href="lexerdevelopment.html"><span class="doc">a new lexer</span></a>,
+<a class="reference internal" href="formatterdevelopment.html"><span class="doc">a new formatter</span></a>,
+<a class="reference internal" href="styledevelopment.html"><span class="doc">a new style</span></a> or
+<a class="reference internal" href="filterdevelopment.html"><span class="doc">a new filter</span></a>.
+If adding a lexer, please make sure you have
+read <a class="reference internal" href="lexerdevelopment.html#lexer-pitfalls"><span class="std std-ref">Common pitfalls and best practices</span></a>.</p></li>
+<li><p>Run the test suite with <code class="docutils literal notranslate"><span class="pre">tox</span></code>, and ensure it passes.</p></li>
+<li><p>Make sure to add a test for your new functionality, and where applicable,
+write documentation.</p></li>
+<li><p>Use the standard importing convention: <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">token</span> <span class="pre">import</span> <span class="pre">Punctuation</span></code></p></li>
+</ul>
+</section>
+<section id="goals-non-goals-of-pygments">
+<h2>Goals &amp; non-goals of Pygments<a class="headerlink" href="#goals-non-goals-of-pygments" title="链接到此标题。">¶</a></h2>
+<section id="python-support">
+<h3>Python support<a class="headerlink" href="#python-support" title="链接到此标题。">¶</a></h3>
+<p>Pygments supports all supported Python versions as per the <a class="reference external" href="https://devguide.python.org/versions/">Python
+Developer's Guide</a>. Additionally, the default Python
+version of the latest stable version of RHEL, Ubuntu LTS, and Debian
+are supported, even if they're officially EOL. Supporting other
+end-of-life versions is a non-goal of Pygments.</p>
+</section>
+<section id="validation">
+<h3>Validation<a class="headerlink" href="#validation" title="链接到此标题。">¶</a></h3>
+<p>Pygments does not attempt to validate the input. Accepting code that
+is not legal for a given language is acceptable if it simplifies the
+codebase and does not result in surprising behavior. For instance, in
+C89, accepting <cite>//</cite> based comments would be fine because de-facto all
+compilers supported it, and having a separate lexer for it would not
+be worth it.</p>
+</section>
+<section id="language-support">
+<h3>Language support<a class="headerlink" href="#language-support" title="链接到此标题。">¶</a></h3>
+<p>While we strive for the broadest language support possible, we can't support
+every programming language on the planet. Our minimum bar is fairly low, but to
+avoid pet projects and other one-off languages, we expect any language that is
+proposed for inclusion to have a reasonably sized community around it. If you
+need a syntax highlighter for your in-house programming language or the brand
+new language project you kicked off, consider writing a <a class="reference internal" href="plugins.html"><span class="doc">plugin</span></a>
+until it gains enough popularity.</p>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>

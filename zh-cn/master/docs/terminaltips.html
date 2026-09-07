@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Terminal Tips &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=f8b8afec"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/terminaltips.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Using Pygments with MoinMoin" href="moinmoin.html" />
+    <link rel="prev" title="Plugins" href="plugins.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目录</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Terminal Tips</a><ul>
+<li><a class="reference internal" href="#how-do-i-determine-which-shell-i-am-using">How do I determine which shell I am using?</a></li>
+<li><a class="reference internal" href="#aliases-posix">Aliases (POSIX)</a></li>
+<li><a class="reference internal" href="#aliases-fish-shell">Aliases (fish shell)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上一主题</h4>
+  <p class="topless"><a href="plugins.html"
+                        title="上一章">Plugins</a></p>
+</div>
+<div>
+  <h4>下一主题</h4>
+  <p class="topless"><a href="moinmoin.html"
+                        title="下一章">Using Pygments with MoinMoin</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/terminaltips.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="提交" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="terminal-tips">
+<h1>Terminal Tips<a class="headerlink" href="#terminal-tips" title="链接到此标题。">¶</a></h1>
+<p>These are some tips how to get more out of Pygments on the terminal.</p>
+<section id="how-do-i-determine-which-shell-i-am-using">
+<h2>How do I determine which shell I am using?<a class="headerlink" href="#how-do-i-determine-which-shell-i-am-using" title="链接到此标题。">¶</a></h2>
+<p>Run this command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$SHELL</span>
+</pre></div>
+</div>
+<p>Mine outputs  <code class="docutils literal notranslate"><span class="pre">/usr/bin/fish</span></code>, which is the location of the executable.
+This means my computer is using the fish shell. <code class="docutils literal notranslate"><span class="pre">neofetch</span></code> (or a similar
+utility) can  also provide that information.</p>
+<p>Most shells are POSIX compliant.</p>
+</section>
+<section id="aliases-posix">
+<h2>Aliases (POSIX)<a class="headerlink" href="#aliases-posix" title="链接到此标题。">¶</a></h2>
+<p>POSIX compliant shells includes <code class="docutils literal notranslate"><span class="pre">bash</span></code> and <code class="docutils literal notranslate"><span class="pre">zsh</span></code>, and most shells.</p>
+<p>Aliases allow you to call a function using a different name.  In this case it
+calls <strong class="program">pygmentize</strong> by using a different name.  The simplest is to make
+an alias called <code class="docutils literal notranslate"><span class="pre">cath</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">alias</span><span class="w"> </span><span class="nv">cath</span><span class="o">=</span><span class="s2">&quot;pygmentize&quot;</span>
+</pre></div>
+</div>
+<p>The only thing is that <strong class="program">pygmentize</strong> does not really work like <code class="docutils literal notranslate"><span class="pre">cat</span></code>.
+It does allow you to use a command that is similar to one use for cat,
+displaying a file.</p>
+<p>Add additional flags can be added as desired.  The monokai style works well for
+a dark background, so this is how you would add that option:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">alias</span><span class="w"> </span><span class="nv">cath</span><span class="o">=</span><span class="s2">&quot;pygmentize -O style=monokai&quot;</span>
+</pre></div>
+</div>
+<p>Here is a version of <code class="docutils literal notranslate"><span class="pre">less</span></code> with syntax highlighting.  It is slightly more
+complicated, because it uses the environment variable <code class="docutils literal notranslate"><span class="pre">LESSOPEN</span></code> to preprocess
+the input file(s):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">alias</span><span class="w"> </span><span class="nv">lessh</span><span class="o">=</span><span class="s1">&#x27;LESSOPEN=&quot;| pygmentize -O style=monokai %s&quot; less -M -R &#x27;</span>
+</pre></div>
+</div>
+<p>These alias commands need to be added to your configuration in order to work
+when you open a new terminal (or restart the computer).</p>
+<p>Add above commands to your configuration file:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">bash</span></code> - edit either <code class="docutils literal notranslate"><span class="pre">~/.bash_aliases</span></code> (if it exists) or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">csh</span></code> (C shell), edit  the <code class="docutils literal notranslate"><span class="pre">~/.cshrc</span></code> file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ksh</span></code> (Korn shell), edit the <code class="docutils literal notranslate"><span class="pre">~/.kshrc</span></code> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tcsh</span></code>, edit the <code class="docutils literal notranslate"><span class="pre">~/.tcshrc</span></code> file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zsh</span></code>, edit the <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> file.</p></li>
+</ul>
+<p>In order to apply the changes to the current shell environment systems: run <code class="docutils literal notranslate"><span class="pre">source</span></code> on the filename just edited:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span><span class="o">[</span>~/.filenamerc<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="aliases-fish-shell">
+<h2>Aliases (fish shell)<a class="headerlink" href="#aliases-fish-shell" title="链接到此标题。">¶</a></h2>
+<p>The above aliases for POSIX work just fine, but permanently saving an alias in
+fish shell is a little different.  Functions are used to make permanent aliases.
+<code class="docutils literal notranslate"><span class="pre">funced</span> <span class="pre">[command]</span></code> is used to create the function, followed by
+<code class="docutils literal notranslate"><span class="pre">funcsave</span> <span class="pre">[command]</span></code> saves the function to the environment.</p>
+<p>Running the <code class="docutils literal notranslate"><span class="pre">funced</span> <span class="pre">cath</span></code>, brings up the default editor, and add the
+following code in the function:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>cath
+<span class="w">        </span><span class="c1"># &#x27;cath&#x27; alias will highlight source code as cat does.</span>
+<span class="w">        </span><span class="nb">alias</span><span class="w"> </span><span class="nv">cath</span><span class="o">=</span><span class="s2">&quot;pygmentize&quot;</span>
+end
+</pre></div>
+</div>
+<p>Here's what the <code class="docutils literal notranslate"><span class="pre">cath</span></code> function looks like with an additional argument:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>cath
+<span class="w">        </span><span class="nb">alias</span><span class="w"> </span><span class="nv">cath</span><span class="o">=</span><span class="s2">&quot;pygmentize -O style=monokai&quot;</span>
+end
+</pre></div>
+</div>
+<p>Note: that just like the POSIX shell you may run <code class="docutils literal notranslate"><span class="pre">alias</span> <span class="pre">cath=&quot;pygmentize</span> <span class="pre">-O</span> <span class="pre">style=monokai&quot;</span></code>
+on the command line to test out the alias beforehand.</p>
+<p>Test the <code class="docutils literal notranslate"><span class="pre">cath</span></code> function. To save the function run <code class="docutils literal notranslate"><span class="pre">funcsave</span> <span class="pre">cath</span></code>.
+This saves the function for future sessions.</p>
+<p><code class="docutils literal notranslate"><span class="pre">funced</span> <span class="pre">lessh</span></code>, which is slightly more
+complicated, because it uses the environment variable <code class="docutils literal notranslate"><span class="pre">LESSOPEN</span></code> to preprocess
+the input file(s):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>lessh
+<span class="w">        </span><span class="nv">LESSOPEN</span><span class="o">=</span><span class="s2">&quot;| pygmentize -O style=native %s&quot;</span><span class="w"> </span>less<span class="w"> </span>-M<span class="w"> </span>-R<span class="w"> </span><span class="nv">$argv</span>
+end
+</pre></div>
+</div>
+<p>Test the <code class="docutils literal notranslate"><span class="pre">lessh</span></code> function. To save the function run <code class="docutils literal notranslate"><span class="pre">funcsave</span> <span class="pre">lessh</span></code>.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>

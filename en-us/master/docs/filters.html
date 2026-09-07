@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en-US" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Filters &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=49efedef"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/filters.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Available formatters" href="formatters.html" />
+    <link rel="prev" title="Available lexers" href="lexers.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Filters</a><ul>
+<li><a class="reference internal" href="#builtin-filters">Builtin Filters</a><ul>
+<li><a class="reference internal" href="#CodeTagFilter"><code class="docutils literal notranslate"><span class="pre">CodeTagFilter</span></code></a></li>
+<li><a class="reference internal" href="#KeywordCaseFilter"><code class="docutils literal notranslate"><span class="pre">KeywordCaseFilter</span></code></a></li>
+<li><a class="reference internal" href="#NameHighlightFilter"><code class="docutils literal notranslate"><span class="pre">NameHighlightFilter</span></code></a></li>
+<li><a class="reference internal" href="#RaiseOnErrorTokenFilter"><code class="docutils literal notranslate"><span class="pre">RaiseOnErrorTokenFilter</span></code></a></li>
+<li><a class="reference internal" href="#VisibleWhitespaceFilter"><code class="docutils literal notranslate"><span class="pre">VisibleWhitespaceFilter</span></code></a></li>
+<li><a class="reference internal" href="#GobbleFilter"><code class="docutils literal notranslate"><span class="pre">GobbleFilter</span></code></a></li>
+<li><a class="reference internal" href="#TokenMergeFilter"><code class="docutils literal notranslate"><span class="pre">TokenMergeFilter</span></code></a></li>
+<li><a class="reference internal" href="#SymbolFilter"><code class="docutils literal notranslate"><span class="pre">SymbolFilter</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="lexers.html"
+                        title="previous chapter">Available lexers</a></p>
+</div>
+<div>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="formatters.html"
+                        title="next chapter">Available formatters</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/filters.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="filters">
+<h1>Filters<a class="headerlink" href="#filters" title="Link to this heading">¶</a></h1>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.7.</span></p>
+</div>
+<p>Transforming a stream of tokens into another stream is called “filtering” and is
+done by filters. The most common example of filters transform each token by
+applying a simple rules such as highlighting the token if it is a TODO or
+another special word, or converting keywords to uppercase to enforce a style
+guide. More complex filters can transform the stream of tokens, such as removing
+the line indentation or merging tokens together. It should be noted that pygments
+filters are entirely unrelated to Python’s <a class="reference external" href="https://docs.python.org/3/library/functions.html#filter">filter</a>.</p>
+<p>An arbitrary number of filters can be applied to token streams coming from
+lexers to improve or annotate the output. To apply a filter, you can use the
+<cite>add_filter()</cite> method of a lexer:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.lexers</span><span class="w"> </span><span class="kn">import</span> <span class="n">PythonLexer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span> <span class="o">=</span> <span class="n">PythonLexer</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add a filter given by a string and options</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span><span class="o">.</span><span class="n">add_filter</span><span class="p">(</span><span class="s1">&#x27;codetagify&#x27;</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="s1">&#x27;lower&#x27;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span><span class="o">.</span><span class="n">filters</span>
+<span class="go">[&lt;pygments.filters.CodeTagFilter object at 0xb785decc&gt;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.filters</span><span class="w"> </span><span class="kn">import</span> <span class="n">KeywordCaseFilter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># or give an instance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">l</span><span class="o">.</span><span class="n">add_filter</span><span class="p">(</span><span class="n">KeywordCaseFilter</span><span class="p">(</span><span class="n">case</span><span class="o">=</span><span class="s1">&#x27;lower&#x27;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The <cite>add_filter()</cite> method takes keyword arguments which are forwarded to
+the constructor of the filter.</p>
+<p>To get a list of all registered filters by name, you can use the
+<cite>get_all_filters()</cite> function from the <cite>pygments.filters</cite> module that returns an
+iterable for all known filters.</p>
+<p>If you want to write your own filter, have a look at <a class="reference internal" href="filterdevelopment.html"><span class="doc">Write your own filter</span></a>.</p>
+<section id="builtin-filters">
+<h2>Builtin Filters<a class="headerlink" href="#builtin-filters" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="CodeTagFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">CodeTagFilter</span></span><a class="headerlink" href="#CodeTagFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>codetagify</p>
+</dd>
+</dl>
+<p>Highlight special code tags in comments and docstrings.</p>
+</dd></dl>
+
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>codetags</cite><span class="classifier">list of strings</span></dt><dd><p>A list of strings that are flagged as code tags.  The default is to
+highlight <code class="docutils literal notranslate"><span class="pre">XXX</span></code>, <code class="docutils literal notranslate"><span class="pre">TODO</span></code>, <code class="docutils literal notranslate"><span class="pre">FIXME</span></code>, <code class="docutils literal notranslate"><span class="pre">BUG</span></code> and <code class="docutils literal notranslate"><span class="pre">NOTE</span></code>.</p>
+</dd>
+</dl>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 2.13: </span>Now recognizes <code class="docutils literal notranslate"><span class="pre">FIXME</span></code> by default.</p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="KeywordCaseFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">KeywordCaseFilter</span></span><a class="headerlink" href="#KeywordCaseFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>keywordcase</p>
+</dd>
+</dl>
+<p>Convert keywords to lowercase or uppercase or capitalize them.</p>
+</dd></dl>
+
+<p>This means first letter uppercase, rest lowercase.</p>
+<p>This can be useful e.g. if you highlight Pascal code and want to adapt the
+code to your styleguide.</p>
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>case</cite><span class="classifier">string</span></dt><dd><p>The casing to convert keywords to. Must be one of <code class="docutils literal notranslate"><span class="pre">'lower'</span></code>,
+<code class="docutils literal notranslate"><span class="pre">'upper'</span></code> or <code class="docutils literal notranslate"><span class="pre">'capitalize'</span></code>.  The default is <code class="docutils literal notranslate"><span class="pre">'lower'</span></code>.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="NameHighlightFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NameHighlightFilter</span></span><a class="headerlink" href="#NameHighlightFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>highlight</p>
+</dd>
+</dl>
+<p>Highlight a normal Name (and Name.*) token with a different token type.</p>
+</dd></dl>
+
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">filter</span> <span class="o">=</span> <span class="n">NameHighlightFilter</span><span class="p">(</span>
+    <span class="n">names</span><span class="o">=</span><span class="p">[</span><span class="s1">&#x27;foo&#x27;</span><span class="p">,</span> <span class="s1">&#x27;bar&#x27;</span><span class="p">,</span> <span class="s1">&#x27;baz&#x27;</span><span class="p">],</span>
+    <span class="n">tokentype</span><span class="o">=</span><span class="n">Name</span><span class="o">.</span><span class="n">Function</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>This would highlight the names “foo”, “bar” and “baz”
+as functions. <cite>Name.Function</cite> is the default token type.</p>
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>names</cite><span class="classifier">list of strings</span></dt><dd><p>A list of names that should be given the different token type.
+There is no default.</p>
+</dd>
+<dt><cite>tokentype</cite><span class="classifier">TokenType or string</span></dt><dd><p>A token type or a string containing a token type name that is
+used for highlighting the strings in <cite>names</cite>.  The default is
+<cite>Name.Function</cite>.</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="RaiseOnErrorTokenFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">RaiseOnErrorTokenFilter</span></span><a class="headerlink" href="#RaiseOnErrorTokenFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>raiseonerror</p>
+</dd>
+</dl>
+<p>Raise an exception when the lexer generates an error token.</p>
+</dd></dl>
+
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>excclass</cite><span class="classifier">Exception class</span></dt><dd><p>The exception class to raise.
+The default is <cite>pygments.filters.ErrorToken</cite>.</p>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.8.</span></p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="VisibleWhitespaceFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">VisibleWhitespaceFilter</span></span><a class="headerlink" href="#VisibleWhitespaceFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>whitespace</p>
+</dd>
+</dl>
+<p>Convert tabs, newlines and/or spaces to visible characters.</p>
+</dd></dl>
+
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>spaces</cite><span class="classifier">string or bool</span></dt><dd><p>If this is a one-character string, spaces will be replaces by this string.
+If it is another true value, spaces will be replaced by <code class="docutils literal notranslate"><span class="pre">·</span></code> (unicode
+MIDDLE DOT).  If it is a false value, spaces will not be replaced.  The
+default is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt><cite>tabs</cite><span class="classifier">string or bool</span></dt><dd><p>The same as for <cite>spaces</cite>, but the default replacement character is <code class="docutils literal notranslate"><span class="pre">»</span></code>
+(unicode RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK).  The default value
+is <code class="docutils literal notranslate"><span class="pre">False</span></code>.  Note: this will not work if the <cite>tabsize</cite> option for the
+lexer is nonzero, as tabs will already have been expanded then.</p>
+</dd>
+<dt><cite>tabsize</cite><span class="classifier">int</span></dt><dd><p>If tabs are to be replaced by this filter (see the <cite>tabs</cite> option), this
+is the total number of characters that a tab should be expanded to.
+The default is <code class="docutils literal notranslate"><span class="pre">8</span></code>.</p>
+</dd>
+<dt><cite>newlines</cite><span class="classifier">string or bool</span></dt><dd><p>The same as for <cite>spaces</cite>, but the default replacement character is <code class="docutils literal notranslate"><span class="pre">¶</span></code>
+(unicode PILCROW SIGN).  The default value is <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</dd>
+<dt><cite>wstokentype</cite><span class="classifier">bool</span></dt><dd><p>If true, give whitespace the special <cite>Whitespace</cite> token type.  This allows
+styling the visible whitespace differently (e.g. greyed out), but it can
+disrupt background colors.  The default is <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 0.8.</span></p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="GobbleFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">GobbleFilter</span></span><a class="headerlink" href="#GobbleFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>gobble</p>
+</dd>
+</dl>
+<p>Gobble source code lines (eats initial characters).</p>
+</dd></dl>
+
+<p>This filter drops the first <code class="docutils literal notranslate"><span class="pre">n</span></code> characters off every line of code.  This
+may be useful when the source code fed to the lexer is indented by a fixed
+amount of space that isn’t desired in the output.</p>
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>n</cite><span class="classifier">int</span></dt><dd><p>The number of characters to gobble.</p>
+</dd>
+</dl>
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.2.</span></p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="TokenMergeFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">TokenMergeFilter</span></span><a class="headerlink" href="#TokenMergeFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tokenmerge</p>
+</dd>
+</dl>
+<p>Merge consecutive tokens with the same token type in the output stream.</p>
+</dd></dl>
+
+<div class="versionadded">
+<p><span class="versionmodified added">Added in version 1.2.</span></p>
+</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="SymbolFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SymbolFilter</span></span><a class="headerlink" href="#SymbolFilter" title="Link to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p>symbols</p>
+</dd>
+</dl>
+<p>Convert mathematical symbols into Unicode characters.</p>
+</dd></dl>
+
+<p>Examples are <code class="docutils literal notranslate"><span class="pre">\&lt;longrightarrow&gt;</span></code> in Isabelle or
+<code class="docutils literal notranslate"><span class="pre">\longrightarrow</span></code> in LaTeX.</p>
+<p>This is mostly useful for HTML or console output when you want to
+approximate the source rendering you’d see in an IDE.</p>
+<p>Options accepted:</p>
+<dl class="simple">
+<dt><cite>lang</cite><span class="classifier">string</span></dt><dd><p>The symbol language. Must be one of <code class="docutils literal notranslate"><span class="pre">'isabelle'</span></code> or
+<code class="docutils literal notranslate"><span class="pre">'latex'</span></code>.  The default is <code class="docutils literal notranslate"><span class="pre">'isabelle'</span></code>.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>
