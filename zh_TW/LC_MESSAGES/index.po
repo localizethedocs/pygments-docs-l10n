@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:2
+msgid "Welcome!"
+msgstr "歡迎！"
+
+#: ../../../index.rst:4
+msgid ""
+"This is the home of Pygments.  It is a generic syntax highlighter suitable "
+"for use in code hosting, forums, wikis or other applications that need to "
+"prettify source code.  Highlights are:"
+msgstr ""
+"這是 Pygments 的主頁。它是一款通用的語法標明器，適用於程式碼託管平臺、論壇、"
+"維基或其他需要美化來源碼的應用程式。其特點包括："
+
+#: ../../../index.rst:8
+msgid ""
+"a wide range of |language_count| languages and other text formats is "
+"supported"
+msgstr "支援多達 |language_count| 種語言及其他文字格式"
+
+#: ../../../index.rst:9
+msgid "special attention is paid to details that increase highlighting quality"
+msgstr ""
+
+#: ../../../index.rst:10
+msgid ""
+"support for new languages and formats are added easily; most languages use a "
+"simple regex-based lexing mechanism"
+msgstr ""
+
+#: ../../../index.rst:12
+msgid ""
+"a number of output formats is available, among them HTML, RTF, LaTeX and "
+"ANSI sequences"
+msgstr "提供多種輸出格式，包括 HTML、RTF、LaTeX 以及 ANSI 序列"
+
+#: ../../../index.rst:14
+msgid "it is usable as a command-line tool and as a library"
+msgstr "它既可作為命令行工具使用，也能作為程式庫呼叫"
+
+#: ../../../index.rst:16
+msgid ""
+"Read more in the :doc:`FAQ list <faq>` or the :doc:`documentation <docs/"
+"index>`, or `download the latest release <https://pypi.python.org/pypi/"
+"Pygments>`_."
+msgstr ""
+
+#: ../../../index.rst:20
+msgid "Contribute"
+msgstr ""
+
+#: ../../../index.rst:22
+msgid ""
+"Like every open-source project, we are always looking for volunteers to help "
+"us with programming. Python knowledge is required, but don't fear: Python is "
+"a very clear and easy to learn language. Read our :doc:`contribution "
+"guidelines <docs/contributing>` for more information."
+msgstr ""
+
+#: ../../../index.rst:27
+msgid ""
+"If you found a bug, just open a ticket in the GitHub tracker. Be sure to log "
+"in to be notified when the issue is fixed -- development is not fast-paced "
+"as the library is quite stable.  You can also send an e-mail to the "
+"developers, see below."
+msgstr ""
+
+#: ../../../index.rst:33
+msgid "The authors"
+msgstr "作者"
+
+#: ../../../index.rst:35
+msgid ""
+"Pygments is maintained by **Georg Brandl**, e-mail address *georg*\\ *@*\\ "
+"*python.org*, **Matthäus Chajdas** and **Jean Abou-Samra**."
+msgstr ""
+"Pygments 目前由 **Georg Brandl**\\ （電子郵件： *georg*\\ *@*\\ *python."
+"org*）、**Matthäus Chajdas** 與 **Jean Abou-Samra** 負責維護。"
+
+#: ../../../index.rst:37
+msgid ""
+"Many lexers and fixes have been contributed by **Armin Ronacher**, the rest "
+"of the `Pocoo <https://www.pocoo.org/>`_ team and **Tim Hatch**."
+msgstr ""

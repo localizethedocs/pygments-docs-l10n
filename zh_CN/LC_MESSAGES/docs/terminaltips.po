@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/terminaltips.rst:7
+msgid "Terminal Tips"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:9
+msgid "These are some tips how to get more out of Pygments on the terminal."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:13
+msgid "How do I determine which shell I am using?"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:14
+msgid "Run this command::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:16
+msgid "$ echo $SHELL"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:18
+msgid ""
+"Mine outputs  ``/usr/bin/fish``, which is the location of the executable. "
+"This means my computer is using the fish shell. ``neofetch`` (or a similar "
+"utility) can  also provide that information."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:22
+msgid "Most shells are POSIX compliant."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:26
+msgid "Aliases (POSIX)"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:28
+msgid "POSIX compliant shells includes ``bash`` and ``zsh``, and most shells."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:30
+msgid ""
+"Aliases allow you to call a function using a different name.  In this case "
+"it calls :program:`pygmentize` by using a different name.  The simplest is "
+"to make an alias called ``cath``::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:34
+msgid "$ alias cath=\"pygmentize\""
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:36
+msgid ""
+"The only thing is that :program:`pygmentize` does not really work like "
+"``cat``. It does allow you to use a command that is similar to one use for "
+"cat, displaying a file."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:40
+msgid ""
+"Add additional flags can be added as desired.  The monokai style works well "
+"for a dark background, so this is how you would add that option::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:43
+msgid "$ alias cath=\"pygmentize -O style=monokai\""
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:46
+msgid ""
+"Here is a version of ``less`` with syntax highlighting.  It is slightly more "
+"complicated, because it uses the environment variable ``LESSOPEN`` to "
+"preprocess the input file(s)::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:50
+msgid ""
+"$ alias lessh='LESSOPEN=\"| pygmentize -O style=monokai %s\" less -M -R '"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:52
+msgid ""
+"These alias commands need to be added to your configuration in order to work "
+"when you open a new terminal (or restart the computer)."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:55
+msgid "Add above commands to your configuration file:"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:57
+msgid ""
+"``bash`` - edit either ``~/.bash_aliases`` (if it exists) or ``~/.bashrc`` "
+"file."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:58
+msgid "``csh`` (C shell), edit  the ``~/.cshrc`` file"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:59
+msgid "``ksh`` (Korn shell), edit the ``~/.kshrc`` file."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:60
+msgid "``tcsh``, edit the ``~/.tcshrc`` file."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:61
+msgid "``zsh``, edit the ``~/.zshrc`` file."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:63
+msgid ""
+"In order to apply the changes to the current shell environment systems: run "
+"``source`` on the filename just edited::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:65
+msgid "$ source [~/.filenamerc]"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:69
+msgid "Aliases (fish shell)"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:70
+msgid ""
+"The above aliases for POSIX work just fine, but permanently saving an alias "
+"in fish shell is a little different.  Functions are used to make permanent "
+"aliases. ``funced [command]`` is used to create the function, followed by "
+"``funcsave [command]`` saves the function to the environment."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:76
+msgid ""
+"Running the ``funced cath``, brings up the default editor, and add the "
+"following code in the function::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:79
+msgid ""
+"function cath\n"
+"        # 'cath' alias will highlight source code as cat does.\n"
+"        alias cath=\"pygmentize\"\n"
+"end"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:84
+msgid ""
+"Here's what the ``cath`` function looks like with an additional argument::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:86
+msgid ""
+"function cath\n"
+"        alias cath=\"pygmentize -O style=monokai\"\n"
+"end"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:90
+msgid ""
+"Note: that just like the POSIX shell you may run ``alias cath=\"pygmentize -"
+"O style=monokai\"`` on the command line to test out the alias beforehand."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:93
+msgid ""
+"Test the ``cath`` function. To save the function run ``funcsave cath``. This "
+"saves the function for future sessions."
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:97
+msgid ""
+"``funced lessh``, which is slightly more complicated, because it uses the "
+"environment variable ``LESSOPEN`` to preprocess the input file(s)::"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:101
+msgid ""
+"function lessh\n"
+"        LESSOPEN=\"| pygmentize -O style=native %s\" less -M -R $argv\n"
+"end"
+msgstr ""
+
+#: ../../../docs/terminaltips.rst:105
+msgid ""
+"Test the ``lessh`` function. To save the function run ``funcsave lessh``."
+msgstr ""
