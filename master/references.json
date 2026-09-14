@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-05-03 16:48:17 +0200",
-      "hash" : "98aa256034403c29cf49d8ec5d190002e0fc1c85",
-      "title" : "Merge pull request #3066 from anayrat/explain"
+      "date" : "2026-08-17 10:03:23 +0200",
+      "hash" : "38f426a6b1cd4ffc6429f5808031b7c62ea57b1f",
+      "title" : "Add heading for 2.22.0."
     }
   },
   "type" : "branch",
