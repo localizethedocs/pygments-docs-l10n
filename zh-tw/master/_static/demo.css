@@ -1,0 +1,89 @@
+#try {
+    background-color: #f6f6f6;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px 5px 10px;
+    position: relative;
+}
+
+#try h2 {
+    margin-top: 0;
+}
+
+#try textarea {
+    border: 1px solid #999;
+    padding: 2px;
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+}
+
+#hlcode {
+    margin: 10px 0;
+    max-height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+
+#hlcode:empty {
+    display: none;
+}
+
+#hlcode pre {
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+}
+#hlcode table {
+    /* unset negative margin from pygments14.css */
+    margin: unset;
+}
+
+#code-header:not([hidden]) {
+    display: flex;
+    gap: 1em;
+    padding: 0 15px;
+}
+.flex-grow-1 {
+    flex-grow: 1;
+}
+#lexer {
+    margin-right: 0.5em;
+}
+#guessed-lexer:not(:empty):before {
+    content: '(guessed ';
+}
+#guessed-lexer:not(:empty):after {
+    content: ')';
+}
+
+#loading[hidden] {
+    visibility: hidden;
+    display: flex;
+}
+
+#loading {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#format-settings {
+    display: flex;
+    gap: 1em;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+}
+
+.tokens code {
+    /* make whitespace visible */
+    white-space: pre;
+    background: #d9d9d9;
+}
+
+#contrast-warning {
+    color: darkred;
+}
