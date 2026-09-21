@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2006-2024, Georg Brandl and Pygments contributors
+# This file is distributed under the same license as the Pygments package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pygments master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-08 08:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../docs/filters.rst:5
+msgid "Filters"
+msgstr ""
+
+#: ../../../docs/filters.rst:9
+msgid ""
+"Transforming a stream of tokens into another stream is called \"filtering\" "
+"and is done by filters. The most common example of filters transform each "
+"token by applying a simple rules such as highlighting the token if it is a "
+"TODO or another special word, or converting keywords to uppercase to enforce "
+"a style guide. More complex filters can transform the stream of tokens, such "
+"as removing the line indentation or merging tokens together. It should be "
+"noted that pygments filters are entirely unrelated to Python's `filter "
+"<https://docs.python.org/3/library/functions.html#filter>`_."
+msgstr ""
+
+#: ../../../docs/filters.rst:18
+msgid ""
+"An arbitrary number of filters can be applied to token streams coming from "
+"lexers to improve or annotate the output. To apply a filter, you can use the "
+"`add_filter()` method of a lexer:"
+msgstr ""
+
+#: ../../../docs/filters.rst:22
+msgid ""
+">>> from pygments.lexers import PythonLexer\n"
+">>> l = PythonLexer()\n"
+">>> # add a filter given by a string and options\n"
+">>> l.add_filter('codetagify', case='lower')\n"
+">>> l.filters\n"
+"[<pygments.filters.CodeTagFilter object at 0xb785decc>]\n"
+">>> from pygments.filters import KeywordCaseFilter\n"
+">>> # or give an instance\n"
+">>> l.add_filter(KeywordCaseFilter(case='lower'))"
+msgstr ""
+
+#: ../../../docs/filters.rst:34
+msgid ""
+"The `add_filter()` method takes keyword arguments which are forwarded to the "
+"constructor of the filter."
+msgstr ""
+
+#: ../../../docs/filters.rst:37
+msgid ""
+"To get a list of all registered filters by name, you can use the "
+"`get_all_filters()` function from the `pygments.filters` module that returns "
+"an iterable for all known filters."
+msgstr ""
+
+#: ../../../docs/filters.rst:41
+msgid ""
+"If you want to write your own filter, have a look at :doc:`Write your own "
+"filter <filterdevelopment>`."
+msgstr ""
+
+#: ../../../docs/filters.rst:46
+msgid "Builtin Filters"
+msgstr ""
+
+#: ../../../docs/filters.rst:0
+msgid "Name"
+msgstr ""
