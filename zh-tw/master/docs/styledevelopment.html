@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Write your own style &#8212; Pygments</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments14.css?v=94696651" />
+    <script src="../_static/documentation_options.js?v=88a78f1b"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    <link rel="canonical" href="https://projects.localizethedocs.org/pygments-docs-l10n/docs/styledevelopment.html" />
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="Plugins" href="plugins.html" />
+    <link rel="prev" title="Write your own filter" href="filterdevelopment.html" />
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:300,400,700'
+          rel='stylesheet' type='text/css'>
+ 
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+      
+    </style>
+
+<script type="text/javascript" src="../ltd-provenance.js"></script>
+<script type="text/javascript" src="../ltd-current.js"></script>
+<script type="text/javascript" src="../../../ltd-config.js"></script>
+<script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+  </head><body>
+<div class="outerwrapper">
+<div class="pageheader">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    
+    <li><a href="../demo.html">Demo</a></li>
+    
+    <li><a href="../languages.html">Languages</a></li>
+    <li><a href="../styles.html">Styles</a></li>
+    <li><a href="../faq.html">FAQ</a></li>
+    <li><a href="../download.html">Get it</a></li>
+    <li><a href="index.html">Docs</a></li>
+  </ul>
+  <div>
+    <a href="../index.html">
+      <img src="../_static/logo_new.png" alt="Pygments logo" height="100" />
+    </a>
+  </div>
+</div>
+<div class="flexwrapper">
+
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Write your own style</a><ul>
+<li><a class="reference internal" href="#style-rules">Style Rules</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<div>
+  <h4>上個主題</h4>
+  <p class="topless"><a href="filterdevelopment.html"
+                        title="上一章">Write your own filter</a></p>
+</div>
+<div>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="plugins.html"
+                        title="下一章">Plugins</a></p>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/docs/styledevelopment.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="前往" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="write-your-own-style">
+<h1>Write your own style<a class="headerlink" href="#write-your-own-style" title="連結到這個標頭">¶</a></h1>
+<p>So, how to create a style? All you have to do is to subclass <cite>Style</cite> and
+define some styles:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pygments.style</span><span class="w"> </span><span class="kn">import</span> <span class="n">Style</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pygments.token</span><span class="w"> </span><span class="kn">import</span> <span class="n">Token</span><span class="p">,</span> <span class="n">Comment</span><span class="p">,</span> <span class="n">Keyword</span><span class="p">,</span> <span class="n">Name</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> \
+     <span class="n">Error</span><span class="p">,</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Number</span><span class="p">,</span> <span class="n">Operator</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">YourStyle</span><span class="p">(</span><span class="n">Style</span><span class="p">):</span>
+
+    <span class="n">styles</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">Token</span><span class="p">:</span>                  <span class="s1">&#x27;&#x27;</span><span class="p">,</span>
+        <span class="n">Comment</span><span class="p">:</span>                <span class="s1">&#x27;italic #888&#x27;</span><span class="p">,</span>
+        <span class="n">Keyword</span><span class="p">:</span>                <span class="s1">&#x27;bold #005&#x27;</span><span class="p">,</span>
+        <span class="n">Name</span><span class="p">:</span>                   <span class="s1">&#x27;#f00&#x27;</span><span class="p">,</span>
+        <span class="n">Name</span><span class="o">.</span><span class="n">Class</span><span class="p">:</span>             <span class="s1">&#x27;bold #0f0&#x27;</span><span class="p">,</span>
+        <span class="n">Name</span><span class="o">.</span><span class="n">Function</span><span class="p">:</span>          <span class="s1">&#x27;#0f0&#x27;</span><span class="p">,</span>
+        <span class="n">String</span><span class="p">:</span>                 <span class="s1">&#x27;bg:#eee #111&#x27;</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+<p>That's it, save it as <code class="docutils literal notranslate"><span class="pre">your.py</span></code>. There are just a few rules. When you define a style for <cite>Name</cite>
+the style automatically also affects <cite>Name.Function</cite> and so on. If you
+defined <code class="docutils literal notranslate"><span class="pre">'bold'</span></code> and you don't want boldface for a subtoken use <code class="docutils literal notranslate"><span class="pre">'nobold'</span></code>.</p>
+<p>(Philosophy: the styles aren't written in CSS syntax since this way
+they can be used for a variety of formatters.)</p>
+<p><code class="docutils literal notranslate"><span class="pre">Token</span></code> is the default style inherited by all token types.</p>
+<p>To make the style usable for Pygments, you must</p>
+<ul class="simple">
+<li><p>either register it as a plugin (see <a class="reference internal" href="plugins.html"><span class="doc">the plugin docs</span></a>)</p></li>
+<li><p>or update the <code class="docutils literal notranslate"><span class="pre">pygments.styles</span></code> subpackage directory. For example:</p>
+<ul>
+<li><p>add <code class="docutils literal notranslate"><span class="pre">your.py</span></code> file</p></li>
+<li><p>regenerate the mappings file using <code class="docutils literal notranslate"><span class="pre">tox</span> <span class="pre">-e</span> <span class="pre">mapfiles</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>You should <em>only</em> add it to the <code class="docutils literal notranslate"><span class="pre">pygments.styles</span></code> subdirectory if you are
+working on a contribution to Pygments. You should not use that
+method to extend an already existing copy of Pygments, use the plugins
+mechanism for that.</p>
+</div>
+<section id="style-rules">
+<h2>Style Rules<a class="headerlink" href="#style-rules" title="連結到這個標頭">¶</a></h2>
+<p>Here a small overview of all allowed styles:</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">bold</span></code></dt><dd><p>render text as bold</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">nobold</span></code></dt><dd><p>don't render text as bold (to prevent subtokens being highlighted bold)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">italic</span></code></dt><dd><p>render text italic</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">noitalic</span></code></dt><dd><p>don't render text as italic</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">underline</span></code></dt><dd><p>render text underlined</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">nounderline</span></code></dt><dd><p>don't render text underlined</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bg:</span></code></dt><dd><p>transparent background</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bg:#000000</span></code></dt><dd><p>background color (black)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">border:</span></code></dt><dd><p>no border</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">border:#ffffff</span></code></dt><dd><p>border color (white)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">#ff0000</span></code></dt><dd><p>text color (red)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">noinherit</span></code></dt><dd><p>don't inherit styles from supertoken</p>
+</dd>
+</dl>
+<p>Note that there may not be a space between <code class="docutils literal notranslate"><span class="pre">bg:</span></code> and the color value
+since the style definition string is split at whitespace.
+Also, using named colors is not allowed since the supported color names
+vary for different formatters.</p>
+<p>Furthermore, not all lexers might support every style.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    </div> 
+    <div class="footer" role="contentinfo">
+      &copy; Copyright 2006-present, Georg Brandl and Pygments contributors.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0. <br/>
+      Pygments logo created by <a href="https://joelunger.com">Joel Unger</a>.
+      Backgrounds from <a href="https://subtlepatterns.com">subtlepatterns.com</a>.
+    </div>
+  </div> 
+
+  </body>
+</html>
