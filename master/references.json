@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-08-17 10:03:23 +0200",
-      "hash" : "38f426a6b1cd4ffc6429f5808031b7c62ea57b1f",
-      "title" : "Add heading for 2.22.0."
+      "date" : "2026-09-27 09:00:22 +0200",
+      "hash" : "156d85fdd18d34427fe893527e71da91dcfb0eb5",
+      "title" : "Improve docs."
     }
   },
   "type" : "branch",
