@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../docs/cmdline.rst:7
 msgid ""
-"You can use Pygments from the shell, provided you installed the :program:"
-"`pygmentize` script::"
+"You can use Pygments from the shell, provided you installed "
+"the :program:`pygmentize` script::"
 msgstr ""
 
 #: ../../../docs/cmdline.rst:10
@@ -92,8 +92,8 @@ msgstr ""
 msgid ""
 "The ``-f`` option selects a formatter (as with ``-l``, it can also be "
 "omitted if an output file name is given and has a supported extension). If "
-"no output file name is given and ``-f`` is omitted, the :class:`."
-"TerminalFormatter` is used."
+"no output file name is given and ``-f`` is omitted, "
+"the :class:`.TerminalFormatter` is used."
 msgstr ""
 
 #: ../../../docs/cmdline.rst:53
@@ -107,8 +107,8 @@ msgstr ""
 #: ../../../docs/cmdline.rst:57
 msgid ""
 "To create a full HTML document, including line numbers and stylesheet (using "
-"the \"emacs\" style), highlighting the Python file ``test.py`` to ``test."
-"html``::"
+"the \"emacs\" style), highlighting the Python file ``test.py`` to "
+"``test.html``::"
 msgstr ""
 
 #: ../../../docs/cmdline.rst:60
@@ -189,8 +189,9 @@ msgstr ""
 #: ../../../docs/cmdline.rst:105
 msgid ""
 "For an explanation what ``-a`` means for :doc:`a particular formatter "
-"<formatters>`, look for the `arg` argument for the formatter's :meth:`."
-"get_style_defs() <pygments.formatter.Formatter.get_style_defs()>` method."
+"<formatters>`, look for the `arg` argument for the "
+"formatter's :meth:`.get_style_defs() "
+"<pygments.formatter.Formatter.get_style_defs()>` method."
 msgstr ""
 
 #: ../../../docs/cmdline.rst:111

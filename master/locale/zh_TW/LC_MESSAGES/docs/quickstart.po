@@ -107,9 +107,9 @@ msgstr ""
 
 #: ../../../docs/quickstart.rst:61
 msgid ""
-"The argument to :meth:`get_style_defs() <pygments.formatter.Formatter."
-"get_style_defs()>` is used as an additional CSS selector: the output may "
-"look like this:"
+"The argument to :meth:`get_style_defs() "
+"<pygments.formatter.Formatter.get_style_defs()>` is used as an additional "
+"CSS selector: the output may look like this:"
 msgstr ""
 
 #: ../../../docs/quickstart.rst:64
@@ -229,9 +229,10 @@ msgstr ""
 
 #: ../../../docs/quickstart.rst:134
 msgid ""
-"A similar API is available for formatters: use :func:`."
-"get_formatter_by_name()` and :func:`.get_formatter_for_filename()` from the :"
-"mod:`pygments.formatters` module for this purpose."
+"A similar API is available for formatters: "
+"use :func:`.get_formatter_by_name()` "
+"and :func:`.get_formatter_for_filename()` from "
+"the :mod:`pygments.formatters` module for this purpose."
 msgstr ""
 
 #: ../../../docs/quickstart.rst:140
@@ -259,19 +260,19 @@ msgstr ""
 #: ../../../docs/quickstart.rst:156
 msgid ""
 ":func:`.guess_lexer() <pygments.lexers.guess_lexer>` passes the given "
-"content to the lexer classes' :meth:`analyse_text() <pygments.lexer.Lexer."
-"analyse_text>` method and returns the one for which it returns the highest "
-"number."
+"content to the lexer classes' :meth:`analyse_text() "
+"<pygments.lexer.Lexer.analyse_text>` method and returns the one for which it "
+"returns the highest number."
 msgstr ""
 
 #: ../../../docs/quickstart.rst:160
 msgid ""
 "All lexers have two different filename pattern lists: the primary and the "
 "secondary one. The :func:`.get_lexer_for_filename()` function only uses the "
-"primary list, whose entries are supposed to be unique among all lexers. :"
-"func:`.guess_lexer_for_filename()`, however, will first loop through all "
-"lexers and look at the primary and secondary filename patterns if the "
-"filename matches. If only one lexer matches, it is returned, else the "
+"primary list, whose entries are supposed to be unique among all "
+"lexers. :func:`.guess_lexer_for_filename()`, however, will first loop "
+"through all lexers and look at the primary and secondary filename patterns "
+"if the filename matches. If only one lexer matches, it is returned, else the "
 "guessing mechanism of :func:`.guess_lexer()` is used with the matching "
 "lexers."
 msgstr ""

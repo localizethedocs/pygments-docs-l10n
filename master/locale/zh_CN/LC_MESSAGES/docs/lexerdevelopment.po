@@ -115,9 +115,9 @@ msgid ""
 "Running the test suite with ``tox`` will run lexers on the test inputs, and "
 "check that the output matches the expected tokens. If you are improving a "
 "lexer, it is normal that the token output changes. To update the expected "
-"token output for the tests, again use ``tox -- --update-goldens <filename."
-"txt>``.  Review the changes and check that they are as intended, then commit "
-"them along with your proposed code change."
+"token output for the tests, again use ``tox -- --update-goldens "
+"<filename.txt>``.  Review the changes and check that they are as intended, "
+"then commit them along with your proposed code change."
 msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:73
@@ -139,9 +139,10 @@ msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:85
 msgid ""
-"The lexer base class used by almost all of Pygments' lexers is the :class:"
-"`RegexLexer <pygments.lexer.RegexLexer>`.  This class allows you to define "
-"lexing rules in terms of *regular expressions* for different *states*."
+"The lexer base class used by almost all of Pygments' lexers is "
+"the :class:`RegexLexer <pygments.lexer.RegexLexer>`.  This class allows you "
+"to define lexing rules in terms of *regular expressions* for different "
+"*states*."
 msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:89
@@ -323,8 +324,8 @@ msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:211
 msgid ""
-"$ python -m pygments -x -f html -Ofull,debug_token_types -l your_lexer.py:"
-"SomeLexer <inputfile>"
+"$ python -m pygments -x -f html -Ofull,debug_token_types -l "
+"your_lexer.py:SomeLexer <inputfile>"
 msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:215
@@ -902,8 +903,8 @@ msgid ""
 "The callback must then return an iterable of (or simply yield) ``(index, "
 "tokentype, value)`` tuples, which are then just passed through by "
 "`get_tokens_unprocessed()`.  The ``index`` here is the position of the token "
-"in the input string, ``tokentype`` is the normal token type (like `Name."
-"Builtin`), and ``value`` the associated part of the input string."
+"in the input string, ``tokentype`` is the normal token type (like "
+"`Name.Builtin`), and ``value`` the associated part of the input string."
 msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:619
@@ -1163,9 +1164,9 @@ msgstr ""
 msgid ""
 "Be careful with ``.*``. This matches greedily as much as it can. For "
 "instance, a rule like ``@.*@`` will match the whole string ``@first@ second "
-"@third@``, instead of matching ``@first@`` and ``@third@``. You can use ``@."
-"*?@`` in this case to stop early. The ``?`` tries to match *as few times* as "
-"possible."
+"@third@``, instead of matching ``@first@`` and ``@third@``. You can use "
+"``@.*?@`` in this case to stop early. The ``?`` tries to match *as few "
+"times* as possible."
 msgstr ""
 
 #: ../../../docs/lexerdevelopment.rst:798

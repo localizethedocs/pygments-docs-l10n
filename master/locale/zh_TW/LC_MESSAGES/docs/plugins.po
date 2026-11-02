@@ -37,9 +37,9 @@ msgstr ""
 #: ../../../docs/plugins.rst:14
 msgid ""
 "This will allow you to use your custom lexers/... with the ``pygmentize`` "
-"command. They will also be found by the lookup functions (``lexers."
-"get_lexer_by_name`` et al.), which makes them available to tools such as "
-"Sphinx, mkdocs, ..."
+"command. They will also be found by the lookup functions "
+"(``lexers.get_lexer_by_name`` et al.), which makes them available to tools "
+"such as Sphinx, mkdocs, ..."
 msgstr ""
 
 #: ../../../docs/plugins.rst:21

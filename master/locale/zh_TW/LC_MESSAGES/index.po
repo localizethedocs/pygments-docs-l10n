@@ -38,7 +38,7 @@ msgstr "支援多達 |language_count| 種語言及其他文字格式"
 
 #: ../../../index.rst:9
 msgid "special attention is paid to details that increase highlighting quality"
-msgstr ""
+msgstr "特別重視能夠提升語法標明品質的細節"
 
 #: ../../../index.rst:10
 msgid ""
@@ -92,8 +92,8 @@ msgid ""
 "Pygments is maintained by **Georg Brandl**, e-mail address *georg*\\ *@*\\ "
 "*python.org*, **Matthäus Chajdas** and **Jean Abou-Samra**."
 msgstr ""
-"Pygments 目前由 **Georg Brandl**\\ （電子郵件： *georg*\\ *@*\\ *python."
-"org*）、**Matthäus Chajdas** 與 **Jean Abou-Samra** 負責維護。"
+"Pygments 目前由 **Georg Brandl**\\ （電子郵件： *georg*\\ *@*\\ "
+"*python.org*）、**Matthäus Chajdas** 與 **Jean Abou-Samra** 負責維護。"
 
 #: ../../../index.rst:37
 msgid ""

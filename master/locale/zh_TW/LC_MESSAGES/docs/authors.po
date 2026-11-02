@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../../AUTHORS:3
 msgid ""
-"Major developers are Tim Hatch <tim@timhatch.com> and Armin Ronacher <armin."
-"ronacher@active-4.com>."
+"Major developers are Tim Hatch <tim@timhatch.com> and Armin Ronacher "
+"<armin.ronacher@active-4.com>."
 msgstr ""
 
 #: ../../../../AUTHORS:6

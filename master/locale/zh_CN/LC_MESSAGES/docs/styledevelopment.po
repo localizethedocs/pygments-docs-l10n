@@ -50,9 +50,9 @@ msgstr ""
 #: ../../../docs/styledevelopment.rst:29
 msgid ""
 "That's it, save it as ``your.py``. There are just a few rules. When you "
-"define a style for `Name` the style automatically also affects `Name."
-"Function` and so on. If you defined ``'bold'`` and you don't want boldface "
-"for a subtoken use ``'nobold'``."
+"define a style for `Name` the style automatically also affects "
+"`Name.Function` and so on. If you defined ``'bold'`` and you don't want "
+"boldface for a subtoken use ``'nobold'``."
 msgstr ""
 
 #: ../../../docs/styledevelopment.rst:33

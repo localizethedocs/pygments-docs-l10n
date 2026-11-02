@@ -108,15 +108,15 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:28
 msgid ""
-"Support dollar-prefixed and multi-quote raw strings (`#3129 <https://github."
-"com/pygments/pygments/issues/3129>`_, `#2897 <https://github.com/pygments/"
-"pygments/issues/2897>`_)"
+"Support dollar-prefixed and multi-quote raw strings (`#3129 <https://"
+"github.com/pygments/pygments/issues/3129>`_, `#2897 <https://github.com/"
+"pygments/pygments/issues/2897>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:29
 msgid ""
-"Recognize ``union`` (`#3182 <https://github.com/pygments/pygments/"
-"issues/3182>`_)"
+"Recognize ``union`` (`#3182 <https://github.com/pygments/pygments/issues/"
+"3182>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:30
@@ -147,8 +147,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:39
 msgid ""
 "CUDA: Derive from the C++ lexer instead of C to highlight C++ constructs "
-"such as ``template``, ``class`` and ``namespace`` (`#3127 <https://github."
-"com/pygments/pygments/issues/3127>`_)"
+"such as ``template``, ``class`` and ``namespace`` (`#3127 <https://"
+"github.com/pygments/pygments/issues/3127>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:41
@@ -160,8 +160,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:42
 msgid ""
 "Fish: Fix single quote backslash escape (`#3138 <https://github.com/pygments/"
-"pygments/issues/3138>`_, `#2821 <https://github.com/pygments/pygments/"
-"issues/2821>`_)"
+"pygments/issues/3138>`_, `#2821 <https://github.com/pygments/pygments/issues/"
+"2821>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:43
@@ -179,8 +179,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:45
 msgid ""
 "Hexdump: Only match valid digits (`#3200 <https://github.com/pygments/"
-"pygments/issues/3200>`_, `#2847 <https://github.com/pygments/pygments/"
-"issues/2847>`_)"
+"pygments/issues/3200>`_, `#2847 <https://github.com/pygments/pygments/issues/"
+"2847>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:46
@@ -191,8 +191,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:47
 msgid ""
-"Jsonnet: Recognize colons in array slice expressions (`#2828 <https://github."
-"com/pygments/pygments/issues/2828>`_)"
+"Jsonnet: Recognize colons in array slice expressions (`#2828 <https://"
+"github.com/pygments/pygments/issues/2828>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:48
@@ -249,22 +249,22 @@ msgstr ""
 #: ../../../docs/changelog.rst:59
 msgid ""
 "Markdown, reStructuredText, TiddlyWiki5: Fix wrong token offsets for "
-"embedded code blocks (`#3133 <https://github.com/pygments/pygments/"
-"issues/3133>`_)"
+"embedded code blocks (`#3133 <https://github.com/pygments/pygments/issues/"
+"3133>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:61
 msgid ""
-"Mathematica: Recognize ``\\[Name]`` named-character escapes such as "
-"``\\[Nu]`` instead of emitting an ``Error`` token (`#3097 <https://github."
-"com/pygments/pygments/issues/3097>`_)"
+"Mathematica: Recognize ``\\[Name]`` named-character escapes such as ``\\"
+"[Nu]`` instead of emitting an ``Error`` token (`#3097 <https://github.com/"
+"pygments/pygments/issues/3097>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:63
 msgid ""
 "MATLAB, Octave, Scilab: Allow ``...`` line continuations in function "
-"definition signatures (`#659 <https://github.com/pygments/pygments/"
-"issues/659>`_)"
+"definition signatures (`#659 <https://github.com/pygments/pygments/issues/"
+"659>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:65
@@ -282,9 +282,9 @@ msgstr ""
 #: ../../../docs/changelog.rst:67
 msgid ""
 "Python: - Recognize ``sentinel`` (`#3114 <https://github.com/pygments/"
-"pygments/issues/3114>`_) - Recognize ``frozendict`` (`#3119 <https://github."
-"com/pygments/pygments/issues/3119>`_) - Recognize lazy imports (`#3115 "
-"<https://github.com/pygments/pygments/issues/3115>`_)"
+"pygments/issues/3114>`_) - Recognize ``frozendict`` (`#3119 <https://"
+"github.com/pygments/pygments/issues/3119>`_) - Recognize lazy imports "
+"(`#3115 <https://github.com/pygments/pygments/issues/3115>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:71
@@ -332,8 +332,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:79
 msgid ""
-"Tcl: Stop ``$name`` variable references at a dash (`#1720 <https://github."
-"com/pygments/pygments/issues/1720>`_)"
+"Tcl: Stop ``$name`` variable references at a dash (`#1720 <https://"
+"github.com/pygments/pygments/issues/1720>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:80
@@ -364,23 +364,23 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:86
 msgid ""
-"Vala: Recognize conditional compilation directives (`#2858 <https://github."
-"com/pygments/pygments/issues/2858>`_)"
+"Vala: Recognize conditional compilation directives (`#2858 <https://"
+"github.com/pygments/pygments/issues/2858>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:87
 msgid ""
 "Vim: - Bump the syntax file to vim 9.2 (`#3183 <https://github.com/pygments/"
-"pygments/issues/3183>`_, `#3174 <https://github.com/pygments/pygments/"
-"issues/3174>`_) - Small improvements to the VimScript lexer (`#3173 <https://"
+"pygments/issues/3183>`_, `#3174 <https://github.com/pygments/pygments/issues/"
+"3174>`_) - Small improvements to the VimScript lexer (`#3173 <https://"
 "github.com/pygments/pygments/issues/3173>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:90
 msgid ""
-"YAML: Add ``yml`` alias (`#3169 <https://github.com/pygments/pygments/"
-"issues/3169>`_), recognize non-breaking spaces as valid scalar content "
-"(`#2827 <https://github.com/pygments/pygments/issues/2827>`_)"
+"YAML: Add ``yml`` alias (`#3169 <https://github.com/pygments/pygments/issues/"
+"3169>`_), recognize non-breaking spaces as valid scalar content (`#2827 "
+"<https://github.com/pygments/pygments/issues/2827>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:92
@@ -406,9 +406,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:99
 msgid ""
-"Fix catastrophic backtracking in ``looks_like_xml`` (`#2931 <https://github."
-"com/pygments/pygments/issues/2931>`_, `#3112 <https://github.com/pygments/"
-"pygments/issues/3112>`_)"
+"Fix catastrophic backtracking in ``looks_like_xml`` (`#2931 <https://"
+"github.com/pygments/pygments/issues/2931>`_, `#3112 <https://github.com/"
+"pygments/pygments/issues/3112>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:100
@@ -428,8 +428,8 @@ msgstr ""
 msgid ""
 "LaTeX formatter: honor the wrapped lexer's ``stripnl`` and other input "
 "options when ``escapeinside`` is set, so blank lines are no longer stripped "
-"under ``stripnl=false`` (`#2975 <https://github.com/pygments/pygments/"
-"issues/2975>`_)"
+"under ``stripnl=false`` (`#2975 <https://github.com/pygments/pygments/issues/"
+"2975>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:105
@@ -459,15 +459,15 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:110
 msgid ""
-"Allow ``transparent`` as a color style definition (`#3180 <https://github."
-"com/pygments/pygments/issues/3180>`_, `#3170 <https://github.com/pygments/"
-"pygments/issues/3170>`_)"
+"Allow ``transparent`` as a color style definition (`#3180 <https://"
+"github.com/pygments/pygments/issues/3180>`_, `#3170 <https://github.com/"
+"pygments/pygments/issues/3170>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:111
 msgid ""
-"HtmlFormatter: ``\"`` and ``'`` now render literally (`#3185 <https://github."
-"com/pygments/pygments/issues/3185>`_)"
+"HtmlFormatter: ``\"`` and ``'`` now render literally (`#3185 <https://"
+"github.com/pygments/pygments/issues/3185>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:114
@@ -490,29 +490,29 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:124
 msgid ""
-"ASN.1: Recognize minus sign and fix range operator (`#3014 <https://github."
-"com/pygments/pygments/issues/3014>`_, `#3060 <https://github.com/pygments/"
-"pygments/issues/3060>`_)"
+"ASN.1: Recognize minus sign and fix range operator (`#3014 <https://"
+"github.com/pygments/pygments/issues/3014>`_, `#3060 <https://github.com/"
+"pygments/pygments/issues/3060>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:125
 msgid ""
-"C++: Add C++26 keywords (`#2955 <https://github.com/pygments/pygments/"
-"issues/2955>`_), add integer literal suffixes (`#2966 <https://github.com/"
-"pygments/pygments/issues/2966>`_)"
+"C++: Add C++26 keywords (`#2955 <https://github.com/pygments/pygments/issues/"
+"2955>`_), add integer literal suffixes (`#2966 <https://github.com/pygments/"
+"pygments/issues/2966>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:126
 msgid ""
 "ComponentPascal: Fix ``analyse_text`` (`#3028 <https://github.com/pygments/"
-"pygments/issues/3028>`_, `#3032 <https://github.com/pygments/pygments/"
-"issues/3032>`_)"
+"pygments/issues/3028>`_, `#3032 <https://github.com/pygments/pygments/issues/"
+"3032>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:127
 msgid ""
-"Coq renamed to Rocq (`#2883 <https://github.com/pygments/pygments/"
-"issues/2883>`_, `#2908 <https://github.com/pygments/pygments/issues/2908>`_)"
+"Coq renamed to Rocq (`#2883 <https://github.com/pygments/pygments/issues/"
+"2883>`_, `#2908 <https://github.com/pygments/pygments/issues/2908>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:128
@@ -605,8 +605,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:142
 msgid ""
-"MySQL: Update keywords (`#2970 <https://github.com/pygments/pygments/"
-"issues/2970>`_)"
+"MySQL: Update keywords (`#2970 <https://github.com/pygments/pygments/issues/"
+"2970>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:143
@@ -637,8 +637,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:147
 msgid ""
 "Python: Add ``t``-string support (`#2973 <https://github.com/pygments/"
-"pygments/issues/2973>`_, `#3009 <https://github.com/pygments/pygments/"
-"issues/3009>`_, `#3010 <https://github.com/pygments/pygments/issues/3010>`_)"
+"pygments/issues/2973>`_, `#3009 <https://github.com/pygments/pygments/issues/"
+"3009>`_, `#3010 <https://github.com/pygments/pygments/issues/3010>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:148
@@ -668,8 +668,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:152
 msgid ""
 "XML: Added ``.xbrl`` as file ending (`#2890 <https://github.com/pygments/"
-"pygments/issues/2890>`_, `#2891 <https://github.com/pygments/pygments/"
-"issues/2891>`_)"
+"pygments/issues/2890>`_, `#2891 <https://github.com/pygments/pygments/issues/"
+"2891>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:154
@@ -687,8 +687,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:156
 msgid ""
-"Update ``onedark`` style to support more token types (`#2977 <https://github."
-"com/pygments/pygments/issues/2977>`_)"
+"Update ``onedark`` style to support more token types (`#2977 <https://"
+"github.com/pygments/pygments/issues/2977>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:157
@@ -818,17 +818,17 @@ msgstr ""
 msgid ""
 "C#: Fix number highlighting (`#986 <https://github.com/pygments/pygments/"
 "issues/986>`_, `#2727 <https://github.com/pygments/pygments/issues/2727>`_), "
-"add ``file`` keyword (`#2726 <https://github.com/pygments/pygments/"
-"issues/2726>`_, `#2805 <https://github.com/pygments/pygments/issues/2805>`_, "
-"`#2806 <https://github.com/pygments/pygments/issues/2806>`_), add various "
-"other keywords (`#2745 <https://github.com/pygments/pygments/issues/2745>`_, "
+"add ``file`` keyword (`#2726 <https://github.com/pygments/pygments/issues/"
+"2726>`_, `#2805 <https://github.com/pygments/pygments/issues/2805>`_, `#2806 "
+"<https://github.com/pygments/pygments/issues/2806>`_), add various other "
+"keywords (`#2745 <https://github.com/pygments/pygments/issues/2745>`_, "
 "`#2770 <https://github.com/pygments/pygments/issues/2770>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:199
 msgid ""
-"CSS: Add ``revert`` (`#2766 <https://github.com/pygments/pygments/"
-"issues/2766>`_, `#2775 <https://github.com/pygments/pygments/issues/2775>`_)"
+"CSS: Add ``revert`` (`#2766 <https://github.com/pygments/pygments/issues/"
+"2766>`_, `#2775 <https://github.com/pygments/pygments/issues/2775>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:200
@@ -845,8 +845,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:202
 msgid ""
-"Igor: Add ``int`` (`#2801 <https://github.com/pygments/pygments/"
-"issues/2801>`_)"
+"Igor: Add ``int`` (`#2801 <https://github.com/pygments/pygments/issues/"
+"2801>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:203
@@ -865,8 +865,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:205
 msgid ""
 "JavaScript: Support private identiiers (`#2729 <https://github.com/pygments/"
-"pygments/issues/2729>`_, `#2671 <https://github.com/pygments/pygments/"
-"issues/2671>`_)"
+"pygments/issues/2729>`_, `#2671 <https://github.com/pygments/pygments/issues/"
+"2671>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:206
@@ -896,8 +896,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:210
 msgid ""
-"S-Lexer: Fix keywords (`#2082 <https://github.com/pygments/pygments/"
-"issues/2082>`_, `#2750 <https://github.com/pygments/pygments/issues/2750>`_)"
+"S-Lexer: Fix keywords (`#2082 <https://github.com/pygments/pygments/issues/"
+"2082>`_, `#2750 <https://github.com/pygments/pygments/issues/2750>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:211
@@ -909,8 +909,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:212
 msgid ""
 "Turtle: Fix triple quoted strings (`#2744 <https://github.com/pygments/"
-"pygments/issues/2744>`_, `#2758 <https://github.com/pygments/pygments/"
-"issues/2758>`_)"
+"pygments/issues/2744>`_, `#2758 <https://github.com/pygments/pygments/issues/"
+"2758>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:213
@@ -946,8 +946,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:219
 msgid ""
 "Fix broken link in the documentation (`#2803 <https://github.com/pygments/"
-"pygments/issues/2803>`_, `#2804 <https://github.com/pygments/pygments/"
-"issues/2804>`_)"
+"pygments/issues/2803>`_, `#2804 <https://github.com/pygments/pygments/issues/"
+"2804>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:220
@@ -990,8 +990,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:226
 msgid ""
-"Improve test robustness (`#2812 <https://github.com/pygments/pygments/"
-"issues/2812>`_)"
+"Improve test robustness (`#2812 <https://github.com/pygments/pygments/issues/"
+"2812>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:229
@@ -1034,8 +1034,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:240
 msgid ""
-"Soong / ``Android.bp`` (`#2659 <https://github.com/pygments/pygments/"
-"issues/2659>`_)"
+"Soong / ``Android.bp`` (`#2659 <https://github.com/pygments/pygments/issues/"
+"2659>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:241
@@ -1089,8 +1089,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:254
 msgid ""
-"lean: Fix name handling (`#2614 <https://github.com/pygments/pygments/"
-"issues/2614>`_)"
+"lean: Fix name handling (`#2614 <https://github.com/pygments/pygments/issues/"
+"2614>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:255
@@ -1112,21 +1112,22 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:259
 msgid ""
-"reStructuredText: use ``Token.Comment`` for comments instead of ``Comment."
-"Preproc`` (`#2598 <https://github.com/pygments/pygments/issues/2598>`_)"
+"reStructuredText: use ``Token.Comment`` for comments instead of "
+"``Comment.Preproc`` (`#2598 <https://github.com/pygments/pygments/issues/"
+"2598>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:261
 msgid ""
 "Rust: highlight ``:``, ``::`` and ``->`` as ``Punctuation`` and whitespace "
-"as ``Whitespace``, instead of ``Text`` in both cases (`#2631 <https://github."
-"com/pygments/pygments/issues/2631>`_)"
+"as ``Whitespace``, instead of ``Text`` in both cases (`#2631 <https://"
+"github.com/pygments/pygments/issues/2631>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:264
 msgid ""
-"Spice: Add keywords (`#2621 <https://github.com/pygments/pygments/"
-"issues/2621>`_)"
+"Spice: Add keywords (`#2621 <https://github.com/pygments/pygments/issues/"
+"2621>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:265
@@ -1219,15 +1220,15 @@ msgstr ""
 #: ../../../docs/changelog.rst:290
 msgid ""
 "The ``url`` attribute is now required for built-in lexers and has been added "
-"to all existing lexers (`#2588 <https://github.com/pygments/pygments/"
-"issues/2588>`_)"
+"to all existing lexers (`#2588 <https://github.com/pygments/pygments/issues/"
+"2588>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:292
 msgid ""
 "The RTF formatter supports line number and line highlighting now (`#1217 "
-"<https://github.com/pygments/pygments/issues/1217>`_, `#2654 <https://github."
-"com/pygments/pygments/issues/2654>`_)"
+"<https://github.com/pygments/pygments/issues/1217>`_, `#2654 <https://"
+"github.com/pygments/pygments/issues/2654>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:293
@@ -1328,8 +1329,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:325
 msgid ""
 "PRQL (`#2507 <https://github.com/pygments/pygments/issues/2507>`_, `#2523 "
-"<https://github.com/pygments/pygments/issues/2523>`_, `#2559 <https://github."
-"com/pygments/pygments/issues/2559>`_)"
+"<https://github.com/pygments/pygments/issues/2523>`_, `#2559 <https://"
+"github.com/pygments/pygments/issues/2559>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:326
@@ -1346,8 +1347,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:331
 msgid ""
-"Cypher: fix comment matching, add missing keywords (`#2504 <https://github."
-"com/pygments/pygments/issues/2504>`_)"
+"Cypher: fix comment matching, add missing keywords (`#2504 <https://"
+"github.com/pygments/pygments/issues/2504>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:332
@@ -1371,8 +1372,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:337
 msgid ""
-"Nix: many improvements (`#2551 <https://github.com/pygments/pygments/"
-"issues/2551>`_, `#1800 <https://github.com/pygments/pygments/issues/1800>`_)"
+"Nix: many improvements (`#2551 <https://github.com/pygments/pygments/issues/"
+"2551>`_, `#1800 <https://github.com/pygments/pygments/issues/1800>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:338
@@ -1439,8 +1440,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:350
 msgid ""
-"Include ``Lexer.add_filter`` in the documentation (`#2519 <https://github."
-"com/pygments/pygments/issues/2519>`_)"
+"Include ``Lexer.add_filter`` in the documentation (`#2519 <https://"
+"github.com/pygments/pygments/issues/2519>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:351
@@ -1465,8 +1466,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:358
 msgid ""
-"Support more file types in ``autopygmentize`` script (`#2513 <https://github."
-"com/pygments/pygments/issues/2513>`_)"
+"Support more file types in ``autopygmentize`` script (`#2513 <https://"
+"github.com/pygments/pygments/issues/2513>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:359
@@ -1546,8 +1547,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:389
 msgid ""
 "Linux desktop files (following the specification of the Freedesktop group, "
-"formerly known as XDG) (`#2470 <https://github.com/pygments/pygments/"
-"issues/2470>`_)"
+"formerly known as XDG) (`#2470 <https://github.com/pygments/pygments/issues/"
+"2470>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:391
@@ -1598,8 +1599,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:404
 msgid ""
-"Elpi: Handle quotations (`#2419 <https://github.com/pygments/pygments/"
-"issues/2419>`_)"
+"Elpi: Handle quotations (`#2419 <https://github.com/pygments/pygments/issues/"
+"2419>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:405
@@ -1627,8 +1628,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:410
 msgid ""
-"lean: Recognize expressions nested within attributes (`#1817 <https://github."
-"com/pygments/pygments/issues/1817>`_)"
+"lean: Recognize expressions nested within attributes (`#1817 <https://"
+"github.com/pygments/pygments/issues/1817>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:411
@@ -1688,8 +1689,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:423
 msgid ""
-"Add Lightbulb style (`#2474 <https://github.com/pygments/pygments/"
-"issues/2474>`_)"
+"Add Lightbulb style (`#2474 <https://github.com/pygments/pygments/issues/"
+"2474>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:424
@@ -1701,8 +1702,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:425
 msgid ""
 "Add documentation how to create terminal code highlighting commands (`#2131 "
-"<https://github.com/pygments/pygments/issues/2131>`_, `#2425 <https://github."
-"com/pygments/pygments/issues/2425>`_)"
+"<https://github.com/pygments/pygments/issues/2131>`_, `#2425 <https://"
+"github.com/pygments/pygments/issues/2425>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:426
@@ -1729,9 +1730,9 @@ msgstr ""
 #: ../../../docs/changelog.rst:436
 msgid ""
 "Fix Python console traceback lexing being too strict and sometimes "
-"reordering output (`#2407 <https://github.com/pygments/pygments/"
-"issues/2407>`_, `#2410 <https://github.com/pygments/pygments/issues/2410>`_, "
-"`#2412 <https://github.com/pygments/pygments/issues/2412>`_)"
+"reordering output (`#2407 <https://github.com/pygments/pygments/issues/"
+"2407>`_, `#2410 <https://github.com/pygments/pygments/issues/2410>`_, `#2412 "
+"<https://github.com/pygments/pygments/issues/2412>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:441
@@ -1756,11 +1757,11 @@ msgstr ""
 #: ../../../docs/changelog.rst:446
 msgid ""
 "Carbon (`#2362 <https://github.com/pygments/pygments/issues/2362>`_, `#2365 "
-"<https://github.com/pygments/pygments/issues/2365>`_, `#2366 <https://github."
-"com/pygments/pygments/issues/2366>`_, `#2367 <https://github.com/pygments/"
-"pygments/issues/2367>`_, `#2368 <https://github.com/pygments/pygments/"
-"issues/2368>`_, `#2369 <https://github.com/pygments/pygments/issues/2369>`_, "
-"`#2370 <https://github.com/pygments/pygments/issues/2370>`_)"
+"<https://github.com/pygments/pygments/issues/2365>`_, `#2366 <https://"
+"github.com/pygments/pygments/issues/2366>`_, `#2367 <https://github.com/"
+"pygments/pygments/issues/2367>`_, `#2368 <https://github.com/pygments/"
+"pygments/issues/2368>`_, `#2369 <https://github.com/pygments/pygments/issues/"
+"2369>`_, `#2370 <https://github.com/pygments/pygments/issues/2370>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:447
@@ -1771,14 +1772,14 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:448
 msgid ""
-"MediaWiki Wikitext (`#2373 <https://github.com/pygments/pygments/"
-"issues/2373>`_, `#827 <https://github.com/pygments/pygments/issues/827>`_)"
+"MediaWiki Wikitext (`#2373 <https://github.com/pygments/pygments/issues/"
+"2373>`_, `#827 <https://github.com/pygments/pygments/issues/827>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:449
 msgid ""
-"PostgreSQL Explain (`#2398 <https://github.com/pygments/pygments/"
-"issues/2398>`_)"
+"PostgreSQL Explain (`#2398 <https://github.com/pygments/pygments/issues/"
+"2398>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:450
@@ -1817,8 +1818,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:461
 msgid ""
 "Improve bash math expansion lexing (`#2255 <https://github.com/pygments/"
-"pygments/issues/2255>`_, `#2353 <https://github.com/pygments/pygments/"
-"issues/2353>`_)"
+"pygments/issues/2255>`_, `#2353 <https://github.com/pygments/pygments/issues/"
+"2353>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:463
@@ -1830,15 +1831,15 @@ msgstr ""
 #: ../../../docs/changelog.rst:464
 msgid ""
 "CMake: Implement bracket style comments (`#2338 <https://github.com/pygments/"
-"pygments/issues/2338>`_, `#2354 <https://github.com/pygments/pygments/"
-"issues/2354>`_)"
+"pygments/issues/2338>`_, `#2354 <https://github.com/pygments/pygments/issues/"
+"2354>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:465
 msgid ""
-"CSS: Improve lexing of numbers inside function calls (`#2382 <https://github."
-"com/pygments/pygments/issues/2382>`_, `#2383 <https://github.com/pygments/"
-"pygments/issues/2383>`_)"
+"CSS: Improve lexing of numbers inside function calls (`#2382 <https://"
+"github.com/pygments/pygments/issues/2382>`_, `#2383 <https://github.com/"
+"pygments/pygments/issues/2383>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:466
@@ -1869,11 +1870,11 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:473
 msgid ""
-"PHP: support attributes (`#2055 <https://github.com/pygments/pygments/"
-"issues/2055>`_, `#2347 <https://github.com/pygments/pygments/issues/2347>`_, "
-"`#2360 <https://github.com/pygments/pygments/issues/2360>`_), fix anonymous "
-"classes without parameters (`#2359 <https://github.com/pygments/pygments/"
-"issues/2359>`_), improve lexing of variable variable syntax (`#2358 <https://"
+"PHP: support attributes (`#2055 <https://github.com/pygments/pygments/issues/"
+"2055>`_, `#2347 <https://github.com/pygments/pygments/issues/2347>`_, `#2360 "
+"<https://github.com/pygments/pygments/issues/2360>`_), fix anonymous classes "
+"without parameters (`#2359 <https://github.com/pygments/pygments/issues/"
+"2359>`_), improve lexing of variable variable syntax (`#2358 <https://"
 "github.com/pygments/pygments/issues/2358>`_)"
 msgstr ""
 
@@ -1883,8 +1884,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:477
 msgid ""
-"Add missing builtins (`#2334 <https://github.com/pygments/pygments/"
-"issues/2334>`_)"
+"Add missing builtins (`#2334 <https://github.com/pygments/pygments/issues/"
+"2334>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:478
@@ -1896,14 +1897,14 @@ msgstr ""
 #: ../../../docs/changelog.rst:480
 msgid ""
 "Rebol/Red: Don't require script headers (`#2348 <https://github.com/pygments/"
-"pygments/issues/2348>`_, `#2349 <https://github.com/pygments/pygments/"
-"issues/2349>`_)"
+"pygments/issues/2348>`_, `#2349 <https://github.com/pygments/pygments/issues/"
+"2349>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:481
 msgid ""
-"Spice: Update keywords (`#2336 <https://github.com/pygments/pygments/"
-"issues/2336>`_)"
+"Spice: Update keywords (`#2336 <https://github.com/pygments/pygments/issues/"
+"2336>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:482
@@ -1939,15 +1940,15 @@ msgstr ""
 #: ../../../docs/changelog.rst:488
 msgid ""
 "Revert a change that made guessing lexers based on file names slower on "
-"Python 3.10 and older (`#2328 <https://github.com/pygments/pygments/"
-"issues/2328>`_)."
+"Python 3.10 and older (`#2328 <https://github.com/pygments/pygments/issues/"
+"2328>`_)."
 msgstr ""
 
 #: ../../../docs/changelog.rst:490
 msgid ""
 "Fix some places where a locale-dependent encoding could unintentionally be "
-"used instead of UTF-8 (`#2326 <https://github.com/pygments/pygments/"
-"issues/2326>`_)."
+"used instead of UTF-8 (`#2326 <https://github.com/pygments/pygments/issues/"
+"2326>`_)."
 msgstr ""
 
 #: ../../../docs/changelog.rst:492
@@ -1964,8 +1965,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:494
 msgid ""
-"Move project metadata to ``pyproject.toml``, remove ``setup.py`` and ``setup."
-"cfg`` (`#2342 <https://github.com/pygments/pygments/issues/2342>`_)"
+"Move project metadata to ``pyproject.toml``, remove ``setup.py`` and "
+"``setup.cfg`` (`#2342 <https://github.com/pygments/pygments/issues/2342>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:497
@@ -2006,8 +2007,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:513
 msgid ""
-"Minecraft schema (`#2276 <https://github.com/pygments/pygments/"
-"issues/2276>`_)"
+"Minecraft schema (`#2276 <https://github.com/pygments/pygments/issues/"
+"2276>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:514
@@ -2038,8 +2039,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:523
 msgid ""
-"Abap: Update keywords (`#2281 <https://github.com/pygments/pygments/"
-"issues/2281>`_)"
+"Abap: Update keywords (`#2281 <https://github.com/pygments/pygments/issues/"
+"2281>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:524
@@ -2069,8 +2070,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:531
 msgid ""
 "C#: Fix number and operator recognition (`#2256 <https://github.com/pygments/"
-"pygments/issues/2256>`_, `#2257 <https://github.com/pygments/pygments/"
-"issues/2257>`_)"
+"pygments/issues/2256>`_, `#2257 <https://github.com/pygments/pygments/issues/"
+"2257>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:532
@@ -2087,8 +2088,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:534
 msgid ""
-"gas (GNU assembler): recognize braces as punctuation (`#2230 <https://github."
-"com/pygments/pygments/issues/2230>`_)"
+"gas (GNU assembler): recognize braces as punctuation (`#2230 <https://"
+"github.com/pygments/pygments/issues/2230>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:535
@@ -2137,8 +2138,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:544
 msgid ""
-"Minecraft-related lexers (SNB and Minecraft function) moved to ``pygments."
-"lexers.minecraft`` (`#2276 <https://github.com/pygments/pygments/"
+"Minecraft-related lexers (SNB and Minecraft function) moved to "
+"``pygments.lexers.minecraft`` (`#2276 <https://github.com/pygments/pygments/"
 "issues/2276>`_)"
 msgstr ""
 
@@ -2163,8 +2164,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:549
 msgid ""
 "NASM: Add support for SSE/AVX/AVX-512 registers as well as 'rel' and 'abs' "
-"address operators (`#2212 <https://github.com/pygments/pygments/"
-"issues/2212>`_)"
+"address operators (`#2212 <https://github.com/pygments/pygments/issues/"
+"2212>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:551
@@ -2173,15 +2174,15 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:553
 msgid ""
-"Add ``local:`` keyword (`#2254 <https://github.com/pygments/pygments/"
-"issues/2254>`_)"
+"Add ``local:`` keyword (`#2254 <https://github.com/pygments/pygments/issues/"
+"2254>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:554
 msgid ""
 "Allow continuations without markers (`#2262 <https://github.com/pygments/"
-"pygments/issues/2262>`_, `#2263 <https://github.com/pygments/pygments/"
-"issues/2263>`_)"
+"pygments/issues/2262>`_, `#2263 <https://github.com/pygments/pygments/issues/"
+"2263>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:556
@@ -2193,8 +2194,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:557
 msgid ""
 "Spice: Add ``enum`` keyword and fix a bug regarding binary, hexadecimal and "
-"octal number tokens (`#2227 <https://github.com/pygments/pygments/"
-"issues/2227>`_)"
+"octal number tokens (`#2227 <https://github.com/pygments/pygments/issues/"
+"2227>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:559
@@ -2277,10 +2278,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:585
 msgid ""
-"Ada: support Ada 2022 (`#2121 <https://github.com/pygments/pygments/"
-"issues/2121>`_); disable recognition of namespaces because it disturbs "
-"lexing of aspects (`#2125 <https://github.com/pygments/pygments/"
-"issues/2125>`_)"
+"Ada: support Ada 2022 (`#2121 <https://github.com/pygments/pygments/issues/"
+"2121>`_); disable recognition of namespaces because it disturbs lexing of "
+"aspects (`#2125 <https://github.com/pygments/pygments/issues/2125>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:587
@@ -2462,8 +2462,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:641
 msgid ""
-"Pygments still falls back on ``pkg_resources`` if neither ``importlib."
-"metadata`` nor ``importlib_metadata`` is found, but it will be slower."
+"Pygments still falls back on ``pkg_resources`` if neither "
+"``importlib.metadata`` nor ``importlib_metadata`` is found, but it will be "
+"slower."
 msgstr ""
 
 #: ../../../docs/changelog.rst:645
@@ -2516,14 +2517,14 @@ msgstr ""
 #: ../../../docs/changelog.rst:659
 msgid ""
 "Use new non-deprecated Pillow API for text bounding box in "
-"``ImageFormatter`` (`#2198 <https://github.com/pygments/pygments/"
-"issues/2198>`_)"
+"``ImageFormatter`` (`#2198 <https://github.com/pygments/pygments/issues/"
+"2198>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:661
 msgid ""
-"Remove ``default_style`` (`#930 <https://github.com/pygments/pygments/"
-"issues/930>`_, `#2183 <https://github.com/pygments/pygments/issues/2183>`_)"
+"Remove ``default_style`` (`#930 <https://github.com/pygments/pygments/issues/"
+"930>`_, `#2183 <https://github.com/pygments/pygments/issues/2183>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:662
@@ -2587,8 +2588,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:683
 msgid ""
-"C family: Fix identifiers after ``case`` statements (`#2084 <https://github."
-"com/pygments/pygments/issues/2084>`_)"
+"C family: Fix identifiers after ``case`` statements (`#2084 <https://"
+"github.com/pygments/pygments/issues/2084>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:684
@@ -2599,8 +2600,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:685
 msgid ""
-"Csound: Update to 6.17 (`#2064 <https://github.com/pygments/pygments/"
-"issues/2064>`_)"
+"Csound: Update to 6.17 (`#2064 <https://github.com/pygments/pygments/issues/"
+"2064>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:686
@@ -2621,8 +2622,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:690
 msgid ""
-"Fix handling of ``->`` (`#2028 <https://github.com/pygments/pygments/"
-"issues/2028>`_)"
+"Fix handling of ``->`` (`#2028 <https://github.com/pygments/pygments/issues/"
+"2028>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:692
@@ -2633,14 +2634,14 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:693
 msgid ""
-"Gherkin: Add ``But`` (`#2046 <https://github.com/pygments/pygments/"
-"issues/2046>`_)"
+"Gherkin: Add ``But`` (`#2046 <https://github.com/pygments/pygments/issues/"
+"2046>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:694
 msgid ""
-"Inform6: Update to 6.36 (`#2050 <https://github.com/pygments/pygments/"
-"issues/2050>`_)"
+"Inform6: Update to 6.36 (`#2050 <https://github.com/pygments/pygments/issues/"
+"2050>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:695
@@ -2665,8 +2666,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:700
 msgid ""
-"Fix incorrect lexing of names containing a built-in (`#2071 <https://github."
-"com/pygments/pygments/issues/2071>`_)"
+"Fix incorrect lexing of names containing a built-in (`#2071 <https://"
+"github.com/pygments/pygments/issues/2071>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:701
@@ -2721,8 +2722,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:713
 msgid ""
-"Fix class name lexing (`#2097 <https://github.com/pygments/pygments/"
-"issues/2097>`_)"
+"Fix class name lexing (`#2097 <https://github.com/pygments/pygments/issues/"
+"2097>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:715
@@ -2737,8 +2738,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:717
 msgid ""
-"Fix multiple lexers marking whitespace as ``Text`` (`#2025 <https://github."
-"com/pygments/pygments/issues/2025>`_)"
+"Fix multiple lexers marking whitespace as ``Text`` (`#2025 <https://"
+"github.com/pygments/pygments/issues/2025>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:718
@@ -2779,8 +2780,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:724
 msgid ""
-"Fix various typos (`#2030 <https://github.com/pygments/pygments/"
-"issues/2030>`_)"
+"Fix various typos (`#2030 <https://github.com/pygments/pygments/issues/"
+"2030>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:725
@@ -2805,8 +2806,8 @@ msgstr ""
 msgid ""
 "When ``linenos=table`` is used, the ``<table>`` itself is now wrapped with a "
 "``<div class=\"highlight\">`` tag instead of placing it inside the ``<td "
-"class=\"code\">`` cell (`#632 <https://github.com/pygments/pygments/"
-"issues/632>`_.) With this change, the output matches the documented behavior."
+"class=\"code\">`` cell (`#632 <https://github.com/pygments/pygments/issues/"
+"632>`_.) With this change, the output matches the documented behavior."
 msgstr ""
 
 #: ../../../docs/changelog.rst:732
@@ -2827,8 +2828,8 @@ msgstr ""
 msgid ""
 "C-family: Fix incorrect handling of labels (`#2022 <https://github.com/"
 "pygments/pygments/issues/2022>`_, `#1996 <https://github.com/pygments/"
-"pygments/issues/1996>`_, `#1182 <https://github.com/pygments/pygments/"
-"issues/1182>`_)"
+"pygments/issues/1996>`_, `#1182 <https://github.com/pygments/pygments/issues/"
+"1182>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:742
@@ -2874,8 +2875,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:756
 msgid ""
 "JSON: Fix a regression which caused whitespace before ``:`` to result in "
-"``Error`` tokens (`#2010 <https://github.com/pygments/pygments/"
-"issues/2010>`_)"
+"``Error`` tokens (`#2010 <https://github.com/pygments/pygments/issues/"
+"2010>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:757
@@ -2928,8 +2929,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:773
 msgid ""
-"Sophia contracts (`#1974 <https://github.com/pygments/pygments/"
-"issues/1974>`_)"
+"Sophia contracts (`#1974 <https://github.com/pygments/pygments/issues/"
+"1974>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:774
@@ -2950,8 +2951,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:780
 msgid ""
 "Assembly: Fix incorrect token endings (`#1895 <https://github.com/pygments/"
-"pygments/issues/1895>`_, `#1961 <https://github.com/pygments/pygments/"
-"issues/1961>`_)"
+"pygments/issues/1895>`_, `#1961 <https://github.com/pygments/pygments/issues/"
+"1961>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:781
@@ -2997,8 +2998,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:789
 msgid ""
-"Fix comment handling (`#2002 <https://github.com/pygments/pygments/"
-"issues/2002>`_)"
+"Fix comment handling (`#2002 <https://github.com/pygments/pygments/issues/"
+"2002>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:790
@@ -3015,9 +3016,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:793
 msgid ""
-"Java: Add ``yield`` (`#1941 <https://github.com/pygments/pygments/"
-"issues/1941>`_) and sealed classes/record (`#1902 <https://github.com/"
-"pygments/pygments/issues/1902>`_)"
+"Java: Add ``yield`` (`#1941 <https://github.com/pygments/pygments/issues/"
+"1941>`_) and sealed classes/record (`#1902 <https://github.com/pygments/"
+"pygments/issues/1902>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:794
@@ -3034,8 +3035,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:796
 msgid ""
-"Prolog: Support escaped ``\\`` inside quoted strings (`#1479 <https://github."
-"com/pygments/pygments/issues/1479>`_)"
+"Prolog: Support escaped ``\\`` inside quoted strings (`#1479 <https://"
+"github.com/pygments/pygments/issues/1479>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:799
@@ -3047,8 +3048,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:800
 msgid ""
 "Support the pattern matching keywords (`#1797 <https://github.com/pygments/"
-"pygments/issues/1797>`_, `#1994 <https://github.com/pygments/pygments/"
-"issues/1994>`_)"
+"pygments/issues/1797>`_, `#1994 <https://github.com/pygments/pygments/issues/"
+"1994>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:802
@@ -3064,14 +3065,14 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:805
 msgid ""
-"Add the 'set' type (`#1909 <https://github.com/pygments/pygments/"
-"issues/1909>`_)"
+"Add the 'set' type (`#1909 <https://github.com/pygments/pygments/issues/"
+"1909>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:806
 msgid ""
-"Support heredocs (`#1909 <https://github.com/pygments/pygments/"
-"issues/1909>`_)"
+"Support heredocs (`#1909 <https://github.com/pygments/pygments/issues/"
+"1909>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:810
@@ -3080,8 +3081,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:811
 msgid ""
-"Friendly Grayscale (`#1040 <https://github.com/pygments/pygments/"
-"issues/1040>`_, `#1273 <https://github.com/pygments/pygments/issues/1273>`_)"
+"Friendly Grayscale (`#1040 <https://github.com/pygments/pygments/issues/"
+"1040>`_, `#1273 <https://github.com/pygments/pygments/issues/1273>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:812
@@ -3114,8 +3115,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:820
 msgid ""
-"Clean up unused imports (`#1887 <https://github.com/pygments/pygments/"
-"issues/1887>`_)"
+"Clean up unused imports (`#1887 <https://github.com/pygments/pygments/issues/"
+"1887>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:821
@@ -3124,21 +3125,21 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:822
 msgid ""
-"Fix multiple lexers marking whitespace as ``Text`` (`#1237 <https://github."
-"com/pygments/pygments/issues/1237>`_, `#1905 <https://github.com/pygments/"
-"pygments/issues/1905>`_, `#1908 <https://github.com/pygments/pygments/"
-"issues/1908>`_, `#1914 <https://github.com/pygments/pygments/issues/1914>`_, "
-"`#1911 <https://github.com/pygments/pygments/issues/1911>`_, `#1923 <https://"
-"github.com/pygments/pygments/issues/1923>`_, `#1939 <https://github.com/"
-"pygments/pygments/issues/1939>`_, `#1957 <https://github.com/pygments/"
-"pygments/issues/1957>`_, `#1978 <https://github.com/pygments/pygments/"
-"issues/1978>`_)"
+"Fix multiple lexers marking whitespace as ``Text`` (`#1237 <https://"
+"github.com/pygments/pygments/issues/1237>`_, `#1905 <https://github.com/"
+"pygments/pygments/issues/1905>`_, `#1908 <https://github.com/pygments/"
+"pygments/issues/1908>`_, `#1914 <https://github.com/pygments/pygments/issues/"
+"1914>`_, `#1911 <https://github.com/pygments/pygments/issues/1911>`_, `#1923 "
+"<https://github.com/pygments/pygments/issues/1923>`_, `#1939 <https://"
+"github.com/pygments/pygments/issues/1939>`_, `#1957 <https://github.com/"
+"pygments/pygments/issues/1957>`_, `#1978 <https://github.com/pygments/"
+"pygments/issues/1978>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:823
 msgid ""
-"Remove duplicated assignments in the Paraiso style (`#1934 <https://github."
-"com/pygments/pygments/issues/1934>`_)"
+"Remove duplicated assignments in the Paraiso style (`#1934 <https://"
+"github.com/pygments/pygments/issues/1934>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:824
@@ -3175,8 +3176,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:829
 msgid ""
-"Update documentation (`#1928 <https://github.com/pygments/pygments/"
-"issues/1928>`_)"
+"Update documentation (`#1928 <https://github.com/pygments/pygments/issues/"
+"1928>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:830
@@ -3223,8 +3224,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:844
 msgid ""
-"ASC armored files (`#1807 <https://github.com/pygments/pygments/"
-"issues/1807>`_)"
+"ASC armored files (`#1807 <https://github.com/pygments/pygments/issues/"
+"1807>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:845
@@ -3313,8 +3314,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:866
 msgid ""
 "Tcl: Allow ``,`` and ``@`` in strings (`#1834 <https://github.com/pygments/"
-"pygments/issues/1834>`_, `#1742 <https://github.com/pygments/pygments/"
-"issues/1742>`_)"
+"pygments/issues/1834>`_, `#1742 <https://github.com/pygments/pygments/issues/"
+"1742>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:867
@@ -3430,9 +3431,9 @@ msgstr ""
 #: ../../../docs/changelog.rst:899
 msgid ""
 "C/C++: Improve namespace handling (`#1722 <https://github.com/pygments/"
-"pygments/issues/1722>`_, `#1561 <https://github.com/pygments/pygments/"
-"issues/1561>`_, `#1719 <https://github.com/pygments/pygments/issues/1719>`_, "
-"`#1746 <https://github.com/pygments/pygments/issues/1746>`_)"
+"pygments/issues/1722>`_, `#1561 <https://github.com/pygments/pygments/issues/"
+"1561>`_, `#1719 <https://github.com/pygments/pygments/issues/1719>`_, `#1746 "
+"<https://github.com/pygments/pygments/issues/1746>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:900
@@ -3462,15 +3463,15 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:906
 msgid ""
-"Octave: Allow multiline and block-percent comments (`#1726 <https://github."
-"com/pygments/pygments/issues/1726>`_)"
+"Octave: Allow multiline and block-percent comments (`#1726 <https://"
+"github.com/pygments/pygments/issues/1726>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:907
 msgid ""
 "PowerShell: Improve lexing of ``:`` (`#1682 <https://github.com/pygments/"
-"pygments/issues/1682>`_, `#1758 <https://github.com/pygments/pygments/"
-"issues/1758>`_)"
+"pygments/issues/1682>`_, `#1758 <https://github.com/pygments/pygments/issues/"
+"1758>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:908
@@ -3490,8 +3491,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:911
 msgid ""
 "Scala: Rewrite to support Scala3 (`#1694 <https://github.com/pygments/"
-"pygments/issues/1694>`_, `#1035 <https://github.com/pygments/pygments/"
-"issues/1035>`_, `#1121 <https://github.com/pygments/pygments/issues/1121>`_)"
+"pygments/issues/1694>`_, `#1035 <https://github.com/pygments/pygments/issues/"
+"1035>`_, `#1121 <https://github.com/pygments/pygments/issues/1121>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:912
@@ -3508,8 +3509,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:915
 msgid ""
-"Add Pango formatter (`#1727 <https://github.com/pygments/pygments/"
-"issues/1727>`_)"
+"Add Pango formatter (`#1727 <https://github.com/pygments/pygments/issues/"
+"1727>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:916
@@ -3526,14 +3527,14 @@ msgstr ""
 msgid ""
 "Fix issue with LaTeX formatter and ``minted`` (`#1734 <https://github.com/"
 "pygments/pygments/issues/1734>`_, `#1735 <https://github.com/pygments/"
-"pygments/issues/1735>`_, `#1736 <https://github.com/pygments/pygments/"
-"issues/1736>`_, `#1737 <https://github.com/pygments/pygments/issues/1737>`_)"
+"pygments/issues/1735>`_, `#1736 <https://github.com/pygments/pygments/issues/"
+"1736>`_, `#1737 <https://github.com/pygments/pygments/issues/1737>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:919
 msgid ""
-"Improve alias order (`#1780 <https://github.com/pygments/pygments/"
-"issues/1780>`_)"
+"Improve alias order (`#1780 <https://github.com/pygments/pygments/issues/"
+"1780>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:920
@@ -3544,8 +3545,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:921
 msgid ""
-"Fix CTag related issue (`#1724 <https://github.com/pygments/pygments/"
-"issues/1724>`_)"
+"Fix CTag related issue (`#1724 <https://github.com/pygments/pygments/issues/"
+"1724>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:922
@@ -3595,8 +3596,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:943
 msgid ""
-"Gruvbox light+dark (`#1763 <https://github.com/pygments/pygments/"
-"issues/1763>`_)"
+"Gruvbox light+dark (`#1763 <https://github.com/pygments/pygments/issues/"
+"1763>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:947
@@ -3630,8 +3631,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:959
 msgid ""
 "AutoIt: Support single quoted strings (`#1667 <https://github.com/pygments/"
-"pygments/issues/1667>`_, `#1663 <https://github.com/pygments/pygments/"
-"issues/1663>`_)"
+"pygments/issues/1667>`_, `#1663 <https://github.com/pygments/pygments/issues/"
+"1663>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:960
@@ -3706,8 +3707,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:973
 msgid ""
-"Various cleanups (`#1673 <https://github.com/pygments/pygments/"
-"issues/1673>`_)"
+"Various cleanups (`#1673 <https://github.com/pygments/pygments/issues/"
+"1673>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:975
@@ -3729,8 +3730,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:978
 msgid ""
-"Stata: Updated keywords (`#1470 <https://github.com/pygments/pygments/"
-"issues/1470>`_)"
+"Stata: Updated keywords (`#1470 <https://github.com/pygments/pygments/issues/"
+"1470>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:982
@@ -3754,10 +3755,10 @@ msgstr ""
 #: ../../../docs/changelog.rst:990
 msgid ""
 "With this release, Pygments moves to a new internal testing system (`#1649 "
-"<https://github.com/pygments/pygments/issues/1649>`_.) See ``Contributing."
-"md`` for details. The main advantage of this new change is a much better "
-"test coverage of all existing example lexers. It also makes it much easier "
-"to add new test snippets."
+"<https://github.com/pygments/pygments/issues/1649>`_.) See "
+"``Contributing.md`` for details. The main advantage of this new change is a "
+"much better test coverage of all existing example lexers. It also makes it "
+"much easier to add new test snippets."
 msgstr ""
 
 #: ../../../docs/changelog.rst:994
@@ -3851,8 +3852,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:1023
 msgid ""
 "Add support for line numbers to the ``terminal256`` formatter (`#1674 "
-"<https://github.com/pygments/pygments/issues/1674>`_, `#1653 <https://github."
-"com/pygments/pygments/issues/1653>`_)"
+"<https://github.com/pygments/pygments/issues/1674>`_, `#1653 <https://"
+"github.com/pygments/pygments/issues/1653>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1024
@@ -3863,14 +3864,14 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1025
 msgid ""
-"Improve ``analyze_text`` logic for ``CBM Basic V2`` (`#1607 <https://github."
-"com/pygments/pygments/issues/1607>`_)"
+"Improve ``analyze_text`` logic for ``CBM Basic V2`` (`#1607 <https://"
+"github.com/pygments/pygments/issues/1607>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1026
 msgid ""
-"Improve LaTeX formatter (`#1708 <https://github.com/pygments/pygments/"
-"issues/1708>`_, `#1709 <https://github.com/pygments/pygments/issues/1709>`_)"
+"Improve LaTeX formatter (`#1708 <https://github.com/pygments/pygments/issues/"
+"1708>`_, `#1709 <https://github.com/pygments/pygments/issues/1709>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1030
@@ -3915,9 +3916,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1041
 msgid ""
-"JavaScript and variants (`#1647 <https://github.com/pygments/pygments/"
-"issues/1647>`_ -- missing regex flags, `#1651 <https://github.com/pygments/"
-"pygments/issues/1651>`_)"
+"JavaScript and variants (`#1647 <https://github.com/pygments/pygments/issues/"
+"1647>`_ -- missing regex flags, `#1651 <https://github.com/pygments/pygments/"
+"issues/1651>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1042
@@ -3944,8 +3945,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1048
 msgid ""
-"SQL - Fix keywords (`#1668 <https://github.com/pygments/pygments/"
-"issues/1668>`_)"
+"SQL - Fix keywords (`#1668 <https://github.com/pygments/pygments/issues/"
+"1668>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1049
@@ -3987,9 +3988,9 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1057
 msgid ""
-"Revert a private API change in the HTML formatter (`#1655 <https://github."
-"com/pygments/pygments/issues/1655>`_) -- please note that private APIs "
-"remain subject to change!"
+"Revert a private API change in the HTML formatter (`#1655 <https://"
+"github.com/pygments/pygments/issues/1655>`_) -- please note that private "
+"APIs remain subject to change!"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1059
@@ -4083,22 +4084,22 @@ msgstr ""
 msgid ""
 "The ``ImgFormatter`` now calculates the exact character width, which fixes "
 "some issues with overlapping text (`#1213 <https://github.com/pygments/"
-"pygments/issues/1213>`_, `#1611 <https://github.com/pygments/pygments/"
-"issues/1611>`_)"
+"pygments/issues/1213>`_, `#1611 <https://github.com/pygments/pygments/issues/"
+"1611>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1086
 msgid ""
-"Documentation fixes (`#1609 <https://github.com/pygments/pygments/"
-"issues/1609>`_, `#1599 <https://github.com/pygments/pygments/issues/1599>`_, "
-"`#1598 <https://github.com/pygments/pygments/issues/1598>`_)"
+"Documentation fixes (`#1609 <https://github.com/pygments/pygments/issues/"
+"1609>`_, `#1599 <https://github.com/pygments/pygments/issues/1599>`_, `#1598 "
+"<https://github.com/pygments/pygments/issues/1598>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1087
 msgid ""
 "Fixed duplicated Juttle language alias (`#1604 <https://github.com/pygments/"
-"pygments/issues/1604>`_, `#1606 <https://github.com/pygments/pygments/"
-"issues/1606>`_)"
+"pygments/issues/1604>`_, `#1606 <https://github.com/pygments/pygments/issues/"
+"1606>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1088
@@ -4147,8 +4148,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1104
 msgid ""
-"Improve ``analyze_text`` across a variety of lexers (`#1549 <https://github."
-"com/pygments/pygments/issues/1549>`_)"
+"Improve ``analyze_text`` across a variety of lexers (`#1549 <https://"
+"github.com/pygments/pygments/issues/1549>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1105
@@ -4268,11 +4269,11 @@ msgstr ""
 msgid ""
 "C++ (`#1350 <https://github.com/pygments/pygments/issues/1350>`_, which also "
 "fixes: `#1222 <https://github.com/pygments/pygments/issues/1222>`_, `#996 "
-"<https://github.com/pygments/pygments/issues/996>`_, `#906 <https://github."
-"com/pygments/pygments/issues/906>`_, `#828 <https://github.com/pygments/"
-"pygments/issues/828>`_, `#1162 <https://github.com/pygments/pygments/"
-"issues/1162>`_, `#1166 <https://github.com/pygments/pygments/issues/1166>`_, "
-"`#1396 <https://github.com/pygments/pygments/issues/1396>`_)"
+"<https://github.com/pygments/pygments/issues/996>`_, `#906 <https://"
+"github.com/pygments/pygments/issues/906>`_, `#828 <https://github.com/"
+"pygments/pygments/issues/828>`_, `#1162 <https://github.com/pygments/"
+"pygments/issues/1162>`_, `#1166 <https://github.com/pygments/pygments/issues/"
+"1166>`_, `#1396 <https://github.com/pygments/pygments/issues/1396>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1143
@@ -4310,8 +4311,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:1151
 msgid ""
 "HTTP (`#1432 <https://github.com/pygments/pygments/issues/1432>`_, `#1520 "
-"<https://github.com/pygments/pygments/issues/1520>`_, `#1521 <https://github."
-"com/pygments/pygments/issues/1521>`_)"
+"<https://github.com/pygments/pygments/issues/1520>`_, `#1521 <https://"
+"github.com/pygments/pygments/issues/1521>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1152
@@ -4346,9 +4347,9 @@ msgstr ""
 #: ../../../docs/changelog.rst:1158
 msgid ""
 "MySQL (`#975 <https://github.com/pygments/pygments/issues/975>`_, `#1063 "
-"<https://github.com/pygments/pygments/issues/1063>`_, `#1453 <https://github."
-"com/pygments/pygments/issues/1453>`_, `#1527 <https://github.com/pygments/"
-"pygments/issues/1527>`_)"
+"<https://github.com/pygments/pygments/issues/1063>`_, `#1453 <https://"
+"github.com/pygments/pygments/issues/1453>`_, `#1527 <https://github.com/"
+"pygments/pygments/issues/1527>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1159
@@ -4388,9 +4389,9 @@ msgid ""
 "`#1452 <https://github.com/pygments/pygments/issues/1452>`_, `#1454 <https://"
 "github.com/pygments/pygments/issues/1454>`_, `#1460 <https://github.com/"
 "pygments/pygments/issues/1460>`_, `#1462 <https://github.com/pygments/"
-"pygments/issues/1462>`_, `#1463 <https://github.com/pygments/pygments/"
-"issues/1463>`_, `#1464 <https://github.com/pygments/pygments/issues/1464>`_, "
-"`#1471 <https://github.com/pygments/pygments/issues/1471>`_, `#1496 <https://"
+"pygments/issues/1462>`_, `#1463 <https://github.com/pygments/pygments/issues/"
+"1463>`_, `#1464 <https://github.com/pygments/pygments/issues/1464>`_, `#1471 "
+"<https://github.com/pygments/pygments/issues/1471>`_, `#1496 <https://"
 "github.com/pygments/pygments/issues/1496>`_, `#1504 <https://github.com/"
 "pygments/pygments/issues/1504>`_)"
 msgstr ""
@@ -4430,8 +4431,8 @@ msgstr ""
 #: ../../../docs/changelog.rst:1174
 msgid ""
 "Fixed line number colors for Solarized (`#1477 <https://github.com/pygments/"
-"pygments/issues/1477>`_, `#1356 <https://github.com/pygments/pygments/"
-"issues/1356>`_)"
+"pygments/issues/1477>`_, `#1356 <https://github.com/pygments/pygments/issues/"
+"1356>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1175
@@ -4442,16 +4443,16 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1176
 msgid ""
-"Improvements to tests (`#1532 <https://github.com/pygments/pygments/"
-"issues/1532>`_, `#1533 <https://github.com/pygments/pygments/issues/1533>`_, "
-"`#1539 <https://github.com/pygments/pygments/issues/1539>`_)"
+"Improvements to tests (`#1532 <https://github.com/pygments/pygments/issues/"
+"1532>`_, `#1533 <https://github.com/pygments/pygments/issues/1533>`_, `#1539 "
+"<https://github.com/pygments/pygments/issues/1539>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1177
 msgid ""
-"Various code cleanups (`#1536 <https://github.com/pygments/pygments/"
-"issues/1536>`_, `#1537 <https://github.com/pygments/pygments/issues/1537>`_, "
-"`#1538 <https://github.com/pygments/pygments/issues/1538>`_)"
+"Various code cleanups (`#1536 <https://github.com/pygments/pygments/issues/"
+"1536>`_, `#1537 <https://github.com/pygments/pygments/issues/1537>`_, `#1538 "
+"<https://github.com/pygments/pygments/issues/1538>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1181
@@ -4478,8 +4479,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1196
 msgid ""
-"Linux kernel logs (`#1310 <https://github.com/pygments/pygments/"
-"issues/1310>`_)"
+"Linux kernel logs (`#1310 <https://github.com/pygments/pygments/issues/"
+"1310>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1197
@@ -4555,8 +4556,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1215
 msgid ""
-"Perl6/Raku lexer (`#1344 <https://github.com/pygments/pygments/"
-"issues/1344>`_)"
+"Perl6/Raku lexer (`#1344 <https://github.com/pygments/pygments/issues/"
+"1344>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1216
@@ -4580,14 +4581,14 @@ msgstr ""
 #: ../../../docs/changelog.rst:1221
 msgid ""
 "The 256-color/true-color terminal formatters now support the italic "
-"attribute in styles (`#1288 <https://github.com/pygments/pygments/"
-"issues/1288>`_)"
+"attribute in styles (`#1288 <https://github.com/pygments/pygments/issues/"
+"1288>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1223
 msgid ""
-"Support HTTP 2/3 header (`#1308 <https://github.com/pygments/pygments/"
-"issues/1308>`_)"
+"Support HTTP 2/3 header (`#1308 <https://github.com/pygments/pygments/issues/"
+"1308>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1224
@@ -4611,8 +4612,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1228
 msgid ""
-"Fix names in S lexer (`#1330 <https://github.com/pygments/pygments/"
-"issues/1330>`_, `#1333 <https://github.com/pygments/pygments/issues/1333>`_)"
+"Fix names in S lexer (`#1330 <https://github.com/pygments/pygments/issues/"
+"1330>`_, `#1333 <https://github.com/pygments/pygments/issues/1333>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1229
@@ -4667,8 +4668,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1242
 msgid ""
-"Fix incompatibility with some setuptools versions (`PR#1316 <https://github."
-"com/pygments/pygments/issues/1316>`_)"
+"Fix incompatibility with some setuptools versions (`PR#1316 <https://"
+"github.com/pygments/pygments/issues/1316>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1244
@@ -4703,14 +4704,14 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1249
 msgid ""
-"Highlight field lists more consistently in ReST (`PR#1279 <https://github."
-"com/pygments/pygments/issues/1279>`_)"
+"Highlight field lists more consistently in ReST (`PR#1279 <https://"
+"github.com/pygments/pygments/issues/1279>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1250
 msgid ""
-"Fix highlighting Matlab keywords in field names (`PR#1282 <https://github."
-"com/pygments/pygments/issues/1282>`_)"
+"Fix highlighting Matlab keywords in field names (`PR#1282 <https://"
+"github.com/pygments/pygments/issues/1282>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1251
@@ -4749,8 +4750,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1271
 msgid ""
-"Erlang, Elixir shells (`PR#823 <https://github.com/pygments/pygments/"
-"issues/823>`_, `#1521 <https://github.com/pygments/pygments/issues/1521>`_)"
+"Erlang, Elixir shells (`PR#823 <https://github.com/pygments/pygments/issues/"
+"823>`_, `#1521 <https://github.com/pygments/pygments/issues/1521>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1272
@@ -4771,8 +4772,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1275
 msgid ""
-"`Zeek <https://www.zeek.org>`_ (new name for Bro) (`PR#1269 <https://github."
-"com/pygments/pygments/issues/1269>`_)"
+"`Zeek <https://www.zeek.org>`_ (new name for Bro) (`PR#1269 <https://"
+"github.com/pygments/pygments/issues/1269>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1276
@@ -4783,8 +4784,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1280
 msgid ""
-"Apache2 Configuration (`PR#1251 <https://github.com/pygments/pygments/"
-"issues/1251>`_)"
+"Apache2 Configuration (`PR#1251 <https://github.com/pygments/pygments/issues/"
+"1251>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1281
@@ -4935,8 +4936,8 @@ msgstr ""
 
 #: ../../../docs/changelog.rst:1322
 msgid ""
-"Matlab: Fix recognition of ``function`` keyword (`PR#1271 <https://github."
-"com/pygments/pygments/issues/1271>`_)"
+"Matlab: Fix recognition of ``function`` keyword (`PR#1271 <https://"
+"github.com/pygments/pygments/issues/1271>`_)"
 msgstr ""
 
 #: ../../../docs/changelog.rst:1323
@@ -7800,9 +7801,9 @@ msgstr ""
 #: ../../../docs/changelog.rst:2520
 msgid ""
 "Changed the exception raised if no suitable lexer, formatter etc. is found "
-"in one of the `get_*_by_*` functions to a custom exception, `pygments.util."
-"ClassNotFound`. It is, however, a subclass of `ValueError` in order to "
-"retain backwards compatibility."
+"in one of the `get_*_by_*` functions to a custom exception, "
+"`pygments.util.ClassNotFound`. It is, however, a subclass of `ValueError` in "
+"order to retain backwards compatibility."
 msgstr ""
 
 #: ../../../docs/changelog.rst:2525

@@ -178,8 +178,8 @@ msgstr ""
 
 #: ../../../docs/terminaltips.rst:90
 msgid ""
-"Note: that just like the POSIX shell you may run ``alias cath=\"pygmentize -"
-"O style=monokai\"`` on the command line to test out the alias beforehand."
+"Note: that just like the POSIX shell you may run ``alias cath=\"pygmentize "
+"-O style=monokai\"`` on the command line to test out the alias beforehand."
 msgstr ""
 
 #: ../../../docs/terminaltips.rst:93
